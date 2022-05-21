@@ -1,0 +1,32 @@
+2021-10-24 08:53:25.937 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-24 08:53:54.805 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-24 08:55:11.298 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-24 09:02:59.756 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-24 14:06:08.429 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'nickname' in 'where clause'
+### The error may exist in file [C:\Users\14618\Desktop\Sync\MyDemo\demo-parent\demo-base-web\target\classes\mapper\UserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT COUNT(1) FROM `user` u WHERE (nickname = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'nickname' in 'where clause'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'nickname' in 'where clause'
+2021-10-24 14:06:13.688 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'nickname' in 'where clause'
+### The error may exist in file [C:\Users\14618\Desktop\Sync\MyDemo\demo-parent\demo-base-web\target\classes\mapper\UserMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT COUNT(1) FROM `user` u WHERE (nickname = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'nickname' in 'where clause'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'nickname' in 'where clause'
+2021-10-24 14:35:02.908 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-24 14:39:45.823 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - JSON parse error: Unrecognized token 'current': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'current': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (PushbackInputStream); line: 1, column: 9]
+2021-10-24 14:46:07.577 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2021-10-24 14:46:09.934 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2021-10-24 14:46:16.841 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2021-10-24 15:41:07.425 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-24 16:34:47.697 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2021-10-24 16:45:47.461 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-24 16:45:50.430 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2021-10-24 19:35:39.659 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-24 22:21:37.077 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - null

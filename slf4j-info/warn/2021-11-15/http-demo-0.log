@@ -1,0 +1,19 @@
+2021-11-15 13:00:09.800 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2021-11-15 13:00:09.919 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.jawe.system.entity.Menu"
+2021-11-15 14:35:40.785 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2021-11-15 14:35:40.855 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.jawe.system.entity.Menu"
+2021-11-15 14:35:42.285 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8881 is already in use
+2021-11-15 14:37:33.065 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2021-11-15 14:37:33.147 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.jawe.system.entity.Menu"
+2021-11-15 14:39:08.069 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2021-11-15 14:39:08.137 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.jawe.system.entity.Menu"
+2021-11-15 14:40:20.224 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2021-11-15 14:40:20.294 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.jawe.system.entity.Menu"
+2021-11-15 14:41:02.547 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2021-11-15 14:41:02.634 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.jawe.system.entity.Menu"
+2021-11-15 14:41:23.304 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2021-11-15 14:41:23.375 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.jawe.system.entity.Menu"
+2021-11-15 14:52:27.717 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2021-11-15 14:52:27.785 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.jawe.system.entity.Menu"
+2021-11-15 14:52:52.012 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2021-11-15 14:52:52.086 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.jawe.system.entity.Menu"

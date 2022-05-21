@@ -1,0 +1,5 @@
+2022-05-12 00:39:38.639 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-12 00:39:41.171 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-12 00:39:46.434 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-12 00:51:07.190 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - 商品库存不足
+2022-05-12 00:51:54.897 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - 商品库存不足

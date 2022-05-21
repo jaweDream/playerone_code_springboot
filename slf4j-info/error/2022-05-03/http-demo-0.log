@@ -1,0 +1,4 @@
+2022-05-03 15:25:13.203 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-03 15:25:16.539 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-03 15:25:24.620 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-03 15:25:24.629 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null

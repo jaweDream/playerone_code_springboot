@@ -1,0 +1,1 @@
+2021-12-27 21:26:15.802 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"

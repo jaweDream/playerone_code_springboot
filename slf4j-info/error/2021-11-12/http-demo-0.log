@@ -1,0 +1,66 @@
+2021-11-12 14:43:13.601 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.jawe.DemoApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'goodsController' for bean class [com.jawe.system.controller_common.GoodsController] conflicts with existing, non-compatible bean definition of same name and class [com.jawe.system.controller.GoodsController]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.jawe.DemoApplication.main(DemoApplication.java:18)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'goodsController' for bean class [com.jawe.system.controller_common.GoodsController] conflicts with existing, non-compatible bean definition of same name and class [com.jawe.system.controller.GoodsController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	... 14 common frames omitted
+2021-11-12 14:44:31.909 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.jawe.DemoApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'goodsController' for bean class [com.jawe.system.controller_common.GoodsController] conflicts with existing, non-compatible bean definition of same name and class [com.jawe.system.controller.GoodsController]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.jawe.DemoApplication.main(DemoApplication.java:18)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'goodsController' for bean class [com.jawe.system.controller_common.GoodsController] conflicts with existing, non-compatible bean definition of same name and class [com.jawe.system.controller.GoodsController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	... 14 common frames omitted
+2021-11-12 15:01:51.139 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'GET' not supported
+2021-11-12 15:24:48.391 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'PUT' not supported
+2021-11-12 15:29:54.699 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2021-11-12 15:30:05.228 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2021-11-12 15:31:03.277 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2021-11-12 15:31:08.273 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2021-11-12 15:31:50.675 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2021-11-12 15:31:59.655 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2021-11-12 15:32:30.826 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2021-11-12 15:32:38.029 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2021-11-12 16:01:57.304 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-12 16:07:50.941 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-12 16:07:54.043 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-12 16:08:02.600 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - null

@@ -1,0 +1,33 @@
+2022-05-09 11:17:18.397 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: BIGINT UNSIGNED value is out of range in '(`player_one`.`goods`.`is_on` - 1)'
+### The error may exist in file [C:\Users\14618\Desktop\Sync\MyDemo\demo-parent\demo-base-web\target\classes\mapper\GoodsMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update goods set is_on=ABS(is_on-1) where id = ?
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: BIGINT UNSIGNED value is out of range in '(`player_one`.`goods`.`is_on` - 1)'
+; Data truncation: BIGINT UNSIGNED value is out of range in '(`player_one`.`goods`.`is_on` - 1)'; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: BIGINT UNSIGNED value is out of range in '(`player_one`.`goods`.`is_on` - 1)'
+2022-05-09 11:17:18.822 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: BIGINT UNSIGNED value is out of range in '(`player_one`.`goods`.`is_on` - 1)'
+### The error may exist in file [C:\Users\14618\Desktop\Sync\MyDemo\demo-parent\demo-base-web\target\classes\mapper\GoodsMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update goods set is_on=ABS(is_on-1) where id = ?
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: BIGINT UNSIGNED value is out of range in '(`player_one`.`goods`.`is_on` - 1)'
+; Data truncation: BIGINT UNSIGNED value is out of range in '(`player_one`.`goods`.`is_on` - 1)'; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: BIGINT UNSIGNED value is out of range in '(`player_one`.`goods`.`is_on` - 1)'
+2022-05-09 11:18:42.029 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: BIGINT UNSIGNED value is out of range in '(`player_one`.`goods`.`is_on` - 1)'
+### The error may exist in file [C:\Users\14618\Desktop\Sync\MyDemo\demo-parent\demo-base-web\target\classes\mapper\GoodsMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update goods set is_on=ABS(is_on-1) where id = ?
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: BIGINT UNSIGNED value is out of range in '(`player_one`.`goods`.`is_on` - 1)'
+; Data truncation: BIGINT UNSIGNED value is out of range in '(`player_one`.`goods`.`is_on` - 1)'; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: BIGINT UNSIGNED value is out of range in '(`player_one`.`goods`.`is_on` - 1)'
+2022-05-09 22:12:31.674 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2022-05-09 22:13:24.616 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2022-05-09 22:13:42.322 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2022-05-09 22:14:32.495 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2022-05-09 22:15:00.820 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2022-05-09 22:15:21.254 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2022-05-09 22:15:43.021 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2022-05-09 22:15:53.882 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2022-05-09 22:16:19.562 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported

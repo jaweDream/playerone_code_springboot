@@ -1,0 +1,4 @@
+2022-04-28 15:02:36.749 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-28 15:02:43.208 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-04-28 15:02:44.630 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-04-28 15:11:10.188 [INFO ] com.jawe.system.service.impl.GoodsCategoryServiceImpl - true

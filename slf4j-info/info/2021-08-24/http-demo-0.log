@@ -1,0 +1,21 @@
+2021-08-24 20:06:27.534 [INFO ] com.jawe.DemoApplication - Starting DemoApplication using Java 1.8.0_291 on DESKTOP-A0VVV1J with PID 48444 (C:\Users\14618\Desktop\Sync\MyDemo\demo-parent\demo-base-web\target\classes started by 14618 in C:\Users\14618\Desktop\Sync\MyDemo\demo-parent)
+2021-08-24 20:06:27.538 [INFO ] com.jawe.DemoApplication - No active profile set, falling back to default profiles: default
+2021-08-24 20:06:28.415 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-24 20:06:28.420 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-08-24 20:06:28.454 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2021-08-24 20:06:29.027 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8881 (http)
+2021-08-24 20:06:29.035 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8881"]
+2021-08-24 20:06:29.035 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-08-24 20:06:29.036 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-08-24 20:06:29.123 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-08-24 20:06:29.123 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1543 ms
+2021-08-24 20:06:30.437 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-08-24 20:06:30.569 [INFO ] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-24 20:06:31.209 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16cb9989, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c951ada, org.springframework.security.web.header.HeaderWriterFilter@2e6d76ba, org.springframework.security.web.csrf.CsrfFilter@463afa6e, org.springframework.security.web.authentication.logout.LogoutFilter@8b13d91, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5657967b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b0d3a63, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26f0141, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3dfd6220, org.springframework.security.web.session.SessionManagementFilter@38ac8968, org.springframework.security.web.access.ExceptionTranslationFilter@256bb5be]
+2021-08-24 20:06:31.252 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8881"]
+2021-08-24 20:06:31.267 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8881 (http) with context path ''
+2021-08-24 20:06:31.268 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-08-24 20:06:31.281 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-08-24 20:06:31.313 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-08-24 20:06:31.449 [INFO ] com.jawe.DemoApplication - Started DemoApplication in 4.773 seconds (JVM running for 5.984)
+2021-08-24 20:07:22.301 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'

@@ -1,0 +1,7 @@
+2022-04-29 11:33:21.368 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-04-29 12:31:39.243 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'GET' not supported
+2022-04-29 12:31:44.375 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'GET' not supported
+2022-04-29 12:31:52.177 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'GET' not supported
+2022-04-29 12:33:14.277 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'GET' not supported
+2022-04-29 12:34:05.140 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'GET' not supported
+2022-04-29 23:34:28.716 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - null

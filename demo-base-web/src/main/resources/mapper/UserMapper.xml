@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jawe.system.mapper.UserMapper">
+<!--    <select id="findUserPage" resultType="User">-->
+<!--        select u.*,d.name as dept_name from `user` u inner join department d on u.dept_id=d.id ${ew.customSqlSegment}-->
+<!--    </select>-->
+
+    <select id="findUserPage" resultType="User">
+        select u.* from `user` u  ${ew.customSqlSegment}
+    </select>
+
+    <select id="currentUser" resultType="User" >
+        select * from user where username = #{username}
+    </select>
+
+    <update id="changeUserEnable"  >
+        update user set enable=ABS(enable-1) where id = #{userId}
+    </update>
+</mapper>

@@ -1,0 +1,6 @@
+2021-12-30 14:25:34.520 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2021-12-30 14:25:34.583 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2021-12-30 14:25:34.614 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2021-12-30 14:25:34.617 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ?
+2021-12-30 14:25:34.618 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long)
+2021-12-30 14:25:34.649 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8

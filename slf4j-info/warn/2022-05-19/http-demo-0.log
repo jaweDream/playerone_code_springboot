@@ -1,0 +1,8 @@
+2022-05-19 02:23:02.982 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-19 02:43:31.472 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-19 02:44:03.354 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-19 02:58:02.791 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-19 02:59:24.029 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-19 03:00:19.938 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-19 03:01:45.813 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-19 16:05:41.289 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".

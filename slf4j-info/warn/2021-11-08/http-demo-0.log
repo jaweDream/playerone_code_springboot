@@ -1,0 +1,2 @@
+2021-11-08 15:24:05.854 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2021-11-08 15:24:05.922 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.jawe.system.entity.Menu"

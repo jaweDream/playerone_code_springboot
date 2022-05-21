@@ -1,0 +1,47 @@
+2021-11-15 12:56:11.548 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-15 14:35:42.322 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8881 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8881 or configure this application to listen on another port.
+
+2021-11-15 14:39:24.227 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'goodsId' in 'where clause'
+### The error may exist in com/jawe/system/mapper/InsetMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,goods_id,url,sort  FROM inset     WHERE (goodsId = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'goodsId' in 'where clause'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'goodsId' in 'where clause'
+2021-11-15 14:39:36.447 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "{1}"
+2021-11-15 14:40:29.867 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "{1}"
+2021-11-15 14:41:07.671 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'goodsId' in 'where clause'
+### The error may exist in com/jawe/system/mapper/InsetMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,goods_id,url,sort  FROM inset     WHERE (goodsId = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'goodsId' in 'where clause'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'goodsId' in 'where clause'
+2021-11-15 16:20:02.385 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-15 16:20:24.404 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-15 16:20:46.534 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-15 16:21:00.850 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-15 16:21:16.364 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-15 20:14:52.723 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-15 20:14:59.419 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-15 20:15:29.784 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-15 20:16:19.382 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-15 20:16:29.677 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-15 22:46:02.153 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-15 22:46:08.752 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-15 22:46:20.734 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-15 22:46:25.738 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - null

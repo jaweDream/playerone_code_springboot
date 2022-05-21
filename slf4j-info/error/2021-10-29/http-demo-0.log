@@ -1,0 +1,31 @@
+2021-10-29 10:42:09.606 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-29 11:06:57.001 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-29 11:07:03.004 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-29 11:12:54.743 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-29 11:12:55.752 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-29 11:54:16.625 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - Required URI template variable 'goodsId' for method parameter type Integer is not present
+2021-10-29 11:58:56.270 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - Required URI template variable 'goodsId' for method parameter type Integer is not present
+2021-10-29 12:00:40.184 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - Required URI template variable 'goodsId' for method parameter type Integer is not present
+2021-10-29 12:01:32.641 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - Required URI template variable 'goodsId' for method parameter type Integer is not present
+2021-10-29 12:02:08.893 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - Required URI template variable 'goodsId' for method parameter type Integer is not present
+2021-10-29 12:02:48.529 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - Required URI template variable 'goodsId' for method parameter type Integer is not present
+2021-10-29 12:04:03.191 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - Required URI template variable 'goodsId' for method parameter type Integer is not present
+2021-10-29 12:06:47.565 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - Required URI template variable 'goodsId' for method parameter type Integer is not present
+2021-10-29 12:06:52.954 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - Required URI template variable 'goodsId' for method parameter type Integer is not present
+2021-10-29 12:14:35.645 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - Required URI template variable 'goodsId' for method parameter type Integer is not present
+2021-10-29 12:15:34.385 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-29 12:15:39.806 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - Required URI template variable 'goodsId' for method parameter type Integer is not present
+2021-10-29 14:12:16.376 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-29 14:27:05.259 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-29 14:29:34.188 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-29 14:29:45.575 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-29 14:30:51.167 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-29 14:32:41.055 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-29 15:52:46.338 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-29 16:09:27.823 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - JSON parse error: Cannot deserialize instance of `java.lang.Integer` out of START_ARRAY token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.lang.Integer` out of START_ARRAY token
+ at [Source: (PushbackInputStream); line: 1, column: 15] (through reference chain: com.jawe.system.entity.Goods["categoryId"])
+2021-10-29 17:10:50.212 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-29 17:11:09.015 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - 账号已存在
+2021-10-29 22:14:47.992 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-29 22:15:23.332 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-29 22:17:53.668 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null

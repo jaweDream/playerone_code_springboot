@@ -1,0 +1,26 @@
+2022-05-17 01:09:28.541 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-17 01:09:34.336 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-17 01:28:12.386 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLException: Field 'price' doesn't have a default value
+### The error may exist in com/jawe/system/mapper/OrderMapper.java (best guess)
+### The error may involve com.jawe.system.mapper.OrderMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO goods_order  ( id, user_id,  state, create_time )  VALUES  ( ?, ?,  ?, ? )
+### Cause: java.sql.SQLException: Field 'price' doesn't have a default value
+; Field 'price' doesn't have a default value; nested exception is java.sql.SQLException: Field 'price' doesn't have a default value
+2022-05-17 01:32:02.649 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLException: Field 'address_id' doesn't have a default value
+### The error may exist in com/jawe/system/mapper/OrderMapper.java (best guess)
+### The error may involve com.jawe.system.mapper.OrderMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO goods_order  ( id, user_id, price, state, create_time )  VALUES  ( ?, ?, ?, ?, ? )
+### Cause: java.sql.SQLException: Field 'address_id' doesn't have a default value
+; Field 'address_id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'address_id' doesn't have a default value
+2022-05-17 01:40:00.861 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLException: Field 'title' doesn't have a default value
+### The error may exist in com/jawe/system/mapper/GoodsOrderGoodsMapper.java (best guess)
+### The error may involve com.jawe.system.mapper.GoodsOrderGoodsMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO goods_order_goods  ( order_id, num, goods_id, cur_price,   is_cancel )  VALUES  ( ?, ?, ?, ?,   ? )
+### Cause: java.sql.SQLException: Field 'title' doesn't have a default value
+; Field 'title' doesn't have a default value; nested exception is java.sql.SQLException: Field 'title' doesn't have a default value

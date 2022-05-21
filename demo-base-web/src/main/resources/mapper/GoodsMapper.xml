@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jawe.system.mapper.GoodsMapper">
+
+
+    <select id="findGoodsPage" resultType="Goods">
+        select g.* from `goods` g  ${ew.customSqlSegment}
+    </select>
+
+    <update id="isOnGoods"  >
+        update goods set is_on=ABS(is_on-1) where id = #{goodsId}
+    </update>
+
+    <update id="decStock" >
+        update goods set stock=stock-#{num},sales=sales+#{num} where id = #{goodsId} and stock-#{num}>=0
+    </update>
+</mapper>

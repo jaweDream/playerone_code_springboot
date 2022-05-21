@@ -1,0 +1,9 @@
+2022-05-13 11:18:47.999 [DEBUG] com.jawe.system.mapper.FlashSaleMapper.selectList - ==>  Preparing: SELECT id,goods_id,start_time,end_time,cur_price,stock,sale,create_time FROM flash_sale WHERE (end_time > ?)
+2022-05-13 11:18:48.018 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2022-05-13 11:18:48.036 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2022-05-13 11:18:48.038 [DEBUG] com.jawe.system.mapper.FlashSaleMapper.selectList - ==> Parameters: 2022-05-13T11:18:47.432(LocalDateTime)
+2022-05-13 11:18:48.088 [DEBUG] com.jawe.system.mapper.FlashSaleMapper.selectList - <==      Total: 0
+2022-05-13 11:18:48.090 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2022-05-13 11:18:48.102 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ?
+2022-05-13 11:18:48.103 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long)
+2022-05-13 11:18:48.113 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8

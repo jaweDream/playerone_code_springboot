@@ -1,0 +1,129 @@
+2022-05-06 00:19:43.801 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-06 01:07:50.347 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2022-05-06 09:50:45.508 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-06 09:50:45.531 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-06 09:50:47.605 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-06 09:50:47.616 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-06 12:24:07.603 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-06 12:24:18.544 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-06 12:24:22.069 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-06 12:24:37.347 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLException: Field 'price' doesn't have a default value
+### The error may exist in com/jawe/system/mapper/OrderMapper.java (best guess)
+### The error may involve com.jawe.system.mapper.OrderMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO goods_order  ( user_id,  state, create_time )  VALUES  ( ?,  ?, ? )
+### Cause: java.sql.SQLException: Field 'price' doesn't have a default value
+; Field 'price' doesn't have a default value; nested exception is java.sql.SQLException: Field 'price' doesn't have a default value
+2022-05-06 12:27:34.394 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+### The error may exist in com/jawe/system/mapper/OrderMapper.java (best guess)
+### The error may involve com.jawe.system.mapper.OrderMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO goods_order  ( user_id, price, state, create_time )  VALUES  ( ?, ?, ?, ? )
+### Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+; Field 'id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'id' doesn't have a default value
+2022-05-06 12:27:38.302 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+### The error may exist in com/jawe/system/mapper/OrderMapper.java (best guess)
+### The error may involve com.jawe.system.mapper.OrderMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO goods_order  ( user_id, price, state, create_time )  VALUES  ( ?, ?, ?, ? )
+### Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+; Field 'id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'id' doesn't have a default value
+2022-05-06 12:28:19.150 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+### The error may exist in com/jawe/system/mapper/OrderMapper.java (best guess)
+### The error may involve com.jawe.system.mapper.OrderMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO goods_order  ( user_id, price, state, create_time )  VALUES  ( ?, ?, ?, ? )
+### Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+; Field 'id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'id' doesn't have a default value
+2022-05-06 12:30:18.211 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+### The error may exist in com/jawe/system/mapper/OrderMapper.java (best guess)
+### The error may involve com.jawe.system.mapper.OrderMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO goods_order  ( user_id, price, state, create_time )  VALUES  ( ?, ?, ?, ? )
+### Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+; Field 'id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'id' doesn't have a default value
+2022-05-06 14:19:18.883 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-06 14:19:21.895 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-06 14:20:44.499 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-06 14:21:23.012 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-06 19:50:38.954 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-06 21:05:15.583 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-06 21:10:22.030 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - Required request header '${jwt.header}' for method parameter type String is not present
+2022-05-06 21:19:23.821 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - [Ljava.lang.Object; cannot be cast to [Ljava.lang.Integer;
+2022-05-06 21:20:38.180 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - [Ljava.lang.Object; cannot be cast to [Ljava.lang.Integer;
+2022-05-06 21:22:47.232 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - [Ljava.lang.Object; cannot be cast to [Ljava.lang.Integer;
+2022-05-06 21:24:15.198 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from cart where user_id = 2 and goods_id in (_binary'??\0ur\0[Ljava.lang.Int' at line 1
+### The error may exist in file [C:\Users\14618\Desktop\Sync\MyDemo\demo-parent\demo-base-web\target\classes\mapper\CartMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: delete * from cart where user_id = ? and goods_id in (?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from cart where user_id = 2 and goods_id in (_binary'??\0ur\0[Ljava.lang.Int' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from cart where user_id = 2 and goods_id in (_binary'??\0ur\0[Ljava.lang.Int' at line 1
+2022-05-06 21:25:14.904 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from cart where user_id = 2 and goods_id in (_binary'??\0ur\0[Ljava.lang.Int' at line 1
+### The error may exist in file [C:\Users\14618\Desktop\Sync\MyDemo\demo-parent\demo-base-web\target\classes\mapper\CartMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: delete * from cart where user_id = ? and goods_id in (?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from cart where user_id = 2 and goods_id in (_binary'??\0ur\0[Ljava.lang.Int' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from cart where user_id = 2 and goods_id in (_binary'??\0ur\0[Ljava.lang.Int' at line 1
+2022-05-06 21:25:51.427 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from cart where user_id = 2 and goods_id in (_binary'??\0ur\0[Ljava.lang.Int' at line 1
+### The error may exist in file [C:\Users\14618\Desktop\Sync\MyDemo\demo-parent\demo-base-web\target\classes\mapper\CartMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: delete * from cart where user_id = ? and goods_id in (?)
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from cart where user_id = 2 and goods_id in (_binary'??\0ur\0[Ljava.lang.Int' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from cart where user_id = 2 and goods_id in (_binary'??\0ur\0[Ljava.lang.Int' at line 1
+2022-05-06 21:29:39.675 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - nested exception is org.apache.ibatis.binding.BindingException: Parameter 'list' not found. Available parameters are [ids, userId, param1, param2]
+2022-05-06 21:29:40.499 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - nested exception is org.apache.ibatis.binding.BindingException: Parameter 'list' not found. Available parameters are [ids, userId, param1, param2]
+2022-05-06 21:30:26.378 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*
+        from cart
+        where user_id = 2 and goods_id in
+         (  
+     ' at line 1
+### The error may exist in file [C:\Users\14618\Desktop\Sync\MyDemo\demo-parent\demo-base-web\target\classes\mapper\CartMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: delete *         from cart         where user_id = ? and goods_id in          (               ?          ,              ?          )
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*
+        from cart
+        where user_id = 2 and goods_id in
+         (  
+     ' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*
+        from cart
+        where user_id = 2 and goods_id in
+         (  
+     ' at line 1
+2022-05-06 22:24:09.959 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-06 22:37:40.305 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "73207790675562500"
+2022-05-06 22:38:44.384 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'goods_id' in 'field list'
+### The error may exist in com/jawe/system/mapper/OrderMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT id,goods_id,user_id,price,state,create_time,pay_time,deliver_time,receive_time,comment_time,finish_time FROM goods_order WHERE id=?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'goods_id' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'goods_id' in 'field list'
+2022-05-06 22:39:45.673 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'GET' not supported
+2022-05-06 22:49:52.955 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'goods_id' in 'field list'
+### The error may exist in com/jawe/system/mapper/OrderMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT id,goods_id,user_id,price,state,create_time,pay_time,deliver_time,receive_time,comment_time,finish_time FROM goods_order WHERE id=?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'goods_id' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'goods_id' in 'field list'
+2022-05-06 22:53:42.249 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler -  等待支付 -> 等待发货 失败, 状态异常 order=null
+2022-05-06 22:54:12.557 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler -  等待支付 -> 等待发货 失败, 状态异常 order=null
+2022-05-06 22:57:22.311 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler -  等待支付 -> 等待发货 失败, 状态异常 order=null
+2022-05-06 22:57:24.046 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'GET' not supported
+2022-05-06 23:16:33.785 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - null

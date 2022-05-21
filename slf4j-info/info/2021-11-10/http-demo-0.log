@@ -1,0 +1,90 @@
+2021-11-10 10:18:42.180 [INFO ] com.jawe.DemoApplication - Starting DemoApplication using Java 1.8.0_291 on DESKTOP-A0VVV1J with PID 17964 (C:\Users\14618\Desktop\Sync\MyDemo\demo-parent\demo-base-web\target\classes started by 14618 in C:\Users\14618\Desktop\Sync\MyDemo\demo-parent)
+2021-11-10 10:18:42.183 [INFO ] com.jawe.DemoApplication - No active profile set, falling back to default profiles: default
+2021-11-10 10:18:43.108 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-10 10:18:43.113 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-10 10:18:43.161 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
+2021-11-10 10:18:43.621 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$16373acc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 10:18:43.675 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 10:18:43.677 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1640190a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 10:18:43.679 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$3b0bdd7e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 10:18:43.684 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 10:18:43.915 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8881 (http)
+2021-11-10 10:18:43.923 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8881"]
+2021-11-10 10:18:43.924 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-10 10:18:43.924 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-11-10 10:18:44.617 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-10 10:18:44.618 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2390 ms
+2021-11-10 10:18:46.053 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/favicon.ico', GET], []
+2021-11-10 10:18:46.053 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.png', GET], []
+2021-11-10 10:18:46.053 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.ttf', GET], []
+2021-11-10 10:18:46.053 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/*.html', GET], []
+2021-11-10 10:18:46.053 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.css', GET], []
+2021-11-10 10:18:46.053 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.js', GET], []
+2021-11-10 10:18:46.086 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25974207, org.springframework.security.web.context.SecurityContextPersistenceFilter@265a094b, org.springframework.security.web.header.HeaderWriterFilter@28393e82, org.springframework.web.filter.CorsFilter@1f15e689, org.springframework.security.web.authentication.logout.LogoutFilter@1e545821, com.jawe.conf.jwt.JwtAuthenticationTokenFilter@5de5e95, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5234b61a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a7cb3a4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@195113de, org.springframework.security.web.session.SessionManagementFilter@7cf63b9a, org.springframework.security.web.access.ExceptionTranslationFilter@4aebee4b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44598ef7]
+2021-11-10 10:18:46.103 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-11-10 10:18:46.522 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8881"]
+2021-11-10 10:18:46.536 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8881 (http) with context path ''
+2021-11-10 10:18:46.537 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-11-10 10:18:46.548 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-11-10 10:18:46.582 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-11-10 10:18:46.687 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: isOnGoodsUsingPUT_1
+2021-11-10 10:18:46.692 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getStockUsingGET_1
+2021-11-10 10:18:46.701 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+2021-11-10 10:18:46.706 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findUserListUsingPOST_1
+2021-11-10 10:18:46.708 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+2021-11-10 10:18:46.723 [INFO ] com.jawe.DemoApplication - Started DemoApplication in 5.066 seconds (JVM running for 6.452)
+2021-11-10 10:22:25.515 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-10 10:22:25.849 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-10 10:22:26.127 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-10 10:22:41.914 [INFO ] com.jawe.system.service.impl.GoodsCategoryServiceImpl - false
+2021-11-10 10:35:57.823 [INFO ] com.jawe.system.service.impl.GoodsCategoryServiceImpl - false
+2021-11-10 10:39:27.666 [INFO ] com.jawe.system.service.impl.GoodsCategoryServiceImpl - false
+2021-11-10 10:39:43.470 [INFO ] com.jawe.system.service.impl.GoodsCategoryServiceImpl - false
+2021-11-10 10:39:48.390 [INFO ] com.jawe.system.service.impl.GoodsCategoryServiceImpl - false
+2021-11-10 10:39:50.167 [INFO ] com.jawe.system.service.impl.GoodsCategoryServiceImpl - false
+2021-11-10 19:37:00.588 [INFO ] com.jawe.system.service.impl.GoodsCategoryServiceImpl - false
+2021-11-10 21:06:44.536 [INFO ] com.jawe.system.service.impl.GoodsCategoryServiceImpl - false
+2021-11-10 21:06:47.597 [INFO ] com.jawe.system.service.impl.GoodsCategoryServiceImpl - false
+2021-11-10 21:07:12.323 [INFO ] com.jawe.system.service.impl.GoodsCategoryServiceImpl - false
+2021-11-10 21:43:59.394 [INFO ] com.jawe.system.service.impl.GoodsCategoryServiceImpl - false
+2021-11-10 21:44:04.240 [INFO ] com.jawe.DemoApplication - Starting DemoApplication using Java 1.8.0_291 on DESKTOP-A0VVV1J with PID 23204 (C:\Users\14618\Desktop\Sync\MyDemo\demo-parent\demo-base-web\target\classes started by 14618 in C:\Users\14618\Desktop\Sync\MyDemo\demo-parent)
+2021-11-10 21:44:04.243 [INFO ] com.jawe.DemoApplication - No active profile set, falling back to default profiles: default
+2021-11-10 21:44:05.006 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-10 21:44:05.008 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-11-10 21:44:05.042 [INFO ] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2021-11-10 21:44:05.299 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$e6c55049] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 21:44:05.344 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 21:44:05.346 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5e1fc2aa' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 21:44:05.348 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$b99f2fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 21:44:05.351 [INFO ] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-10 21:44:05.581 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8881 (http)
+2021-11-10 21:44:05.589 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8881"]
+2021-11-10 21:44:05.590 [INFO ] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-11-10 21:44:05.590 [INFO ] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-11-10 21:44:05.676 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-11-10 21:44:05.676 [INFO ] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1373 ms
+2021-11-10 21:44:06.964 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/favicon.ico', GET], []
+2021-11-10 21:44:06.964 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.png', GET], []
+2021-11-10 21:44:06.965 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.ttf', GET], []
+2021-11-10 21:44:06.965 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/*.html', GET], []
+2021-11-10 21:44:06.965 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.css', GET], []
+2021-11-10 21:44:06.965 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**/*.js', GET], []
+2021-11-10 21:44:06.993 [INFO ] org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58feb6b0, org.springframework.security.web.context.SecurityContextPersistenceFilter@634ca3e7, org.springframework.security.web.header.HeaderWriterFilter@54c425b1, org.springframework.web.filter.CorsFilter@66d25ba9, org.springframework.security.web.authentication.logout.LogoutFilter@7f5614f9, com.jawe.conf.jwt.JwtAuthenticationTokenFilter@314b9e4b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b14b60a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@cbd40c1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3830f918, org.springframework.security.web.session.SessionManagementFilter@2744dcae, org.springframework.security.web.access.ExceptionTranslationFilter@5234b61a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21a46ff1]
+2021-11-10 21:44:07.007 [INFO ] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-11-10 21:44:07.422 [INFO ] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8881"]
+2021-11-10 21:44:07.436 [INFO ] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8881 (http) with context path ''
+2021-11-10 21:44:07.437 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-11-10 21:44:07.448 [INFO ] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-11-10 21:44:07.482 [INFO ] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-11-10 21:44:07.592 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: isOnGoodsUsingPUT_1
+2021-11-10 21:44:07.596 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getStockUsingGET_1
+2021-11-10 21:44:07.607 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addUserUsingPOST_1
+2021-11-10 21:44:07.611 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: findUserListUsingPOST_1
+2021-11-10 21:44:07.613 [INFO ] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: updateUserUsingPUT_1
+2021-11-10 21:44:07.627 [INFO ] com.jawe.DemoApplication - Started DemoApplication in 4.009 seconds (JVM running for 5.061)
+2021-11-10 21:44:09.749 [INFO ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-10 21:44:10.023 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-11-10 21:44:10.231 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-11-10 21:44:10.838 [INFO ] com.jawe.system.service.impl.GoodsCategoryServiceImpl - false
+2021-11-10 21:44:14.264 [INFO ] com.jawe.system.service.impl.GoodsCategoryServiceImpl - false
+2021-11-10 21:44:16.715 [INFO ] com.jawe.system.service.impl.GoodsCategoryServiceImpl - false

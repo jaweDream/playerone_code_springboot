@@ -1,0 +1,101 @@
+2022-05-11 00:38:47.184 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'time' in 'field list'
+### The error may exist in com/jawe/system/mapper/FlashSaleMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,goods_id,start_time,time,cur_price,stock,sale,create_time  FROM flash_sale     WHERE (end_time > ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'time' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'time' in 'field list'
+2022-05-11 01:32:14.399 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 01:35:04.571 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 01:37:24.095 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 01:37:26.179 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 01:42:32.946 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 01:51:04.421 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 01:51:04.430 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:21:30.904 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:21:30.912 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:24:19.655 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:24:19.673 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:24:24.025 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:24:24.035 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:24:55.990 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:24:59.916 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:26:52.037 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:28:00.094 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:28:45.976 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:28:45.993 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:28:53.351 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:29:22.324 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:29:44.381 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:30:01.525 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:30:10.653 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:30:50.479 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 10:32:21.732 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"
+2022-05-11 15:36:00.611 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 15:37:32.623 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 15:39:05.410 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 17:20:15.483 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - nested exception is org.apache.ibatis.reflection.ReflectionException: Could not set property 'createTime' of 'class com.jawe.system.entity.FlashSale' with value 'Wed May 11 17:20:15 CST 2022' Cause: java.lang.IllegalArgumentException: argument type mismatch
+2022-05-11 17:21:49.171 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - nested exception is org.apache.ibatis.reflection.ReflectionException: Could not set property 'createTime' of 'class com.jawe.system.entity.FlashSale' with value 'Wed May 11 17:21:49 CST 2022' Cause: java.lang.IllegalArgumentException: argument type mismatch
+2022-05-11 17:23:32.413 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 17:23:40.746 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 17:24:16.477 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 17:24:46.071 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 17:25:08.354 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 17:25:57.811 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 17:26:04.251 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 17:26:13.739 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 17:26:16.280 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 17:27:02.223 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 17:31:19.255 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - JSON parse error: Cannot deserialize value of type `java.time.LocalDateTime` from String "2022-05-11 00:06:00": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '2022-05-11 00:06:00' could not be parsed at index 10; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.time.LocalDateTime` from String "2022-05-11 00:06:00": Failed to deserialize java.time.LocalDateTime: (java.time.format.DateTimeParseException) Text '2022-05-11 00:06:00' could not be parsed at index 10
+ at [Source: (PushbackInputStream); line: 1, column: 43] (through reference chain: com.jawe.system.entity.FlashSale["startTime"])
+2022-05-11 17:35:22.980 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 17:35:46.553 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 17:41:30.768 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - nested exception is org.apache.ibatis.reflection.ReflectionException: Could not set property 'createTime' of 'class com.jawe.system.entity.FlashSale' with value 'Wed May 11 17:41:30 CST 2022' Cause: java.lang.IllegalArgumentException: argument type mismatch
+2022-05-11 17:42:34.089 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - nested exception is org.apache.ibatis.reflection.ReflectionException: Could not set property 'createTime' of 'class com.jawe.system.entity.FlashSale' with value 'Wed May 11 17:42:34 CST 2022' Cause: java.lang.IllegalArgumentException: argument type mismatch
+2022-05-11 17:43:38.040 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLException: Field 'sale' doesn't have a default value
+### The error may exist in com/jawe/system/mapper/FlashSaleMapper.java (best guess)
+### The error may involve com.jawe.system.mapper.FlashSaleMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO flash_sale  ( goods_id, start_time, end_time, cur_price, stock,  create_time )  VALUES  ( ?, ?, ?, ?, ?,  ? )
+### Cause: java.sql.SQLException: Field 'sale' doesn't have a default value
+; Field 'sale' doesn't have a default value; nested exception is java.sql.SQLException: Field 'sale' doesn't have a default value
+2022-05-11 17:44:08.114 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 17:44:19.800 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 17:44:33.961 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 17:44:37.430 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 17:45:13.137 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 20:09:52.167 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 20:09:56.238 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 20:10:18.175 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 20:10:45.826 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 20:11:50.352 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 20:12:31.740 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 20:45:30.893 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 20:47:35.320 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 20:49:21.009 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 20:49:57.554 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 21:16:25.920 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - 商品已存在
+2022-05-11 21:20:54.107 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - 秒杀商品已结束不能删除
+2022-05-11 21:26:41.640 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - Text '2022-05-11T00:00:05' could not be parsed at index 10
+2022-05-11 21:39:41.917 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - Text '2022-05-11T00:00:05' could not be parsed at index 10
+2022-05-11 21:42:09.869 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - Text '2022-05-11T21:20' could not be parsed at index 10
+2022-05-11 21:42:39.896 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - Text '2022-05-04T00:33:52' could not be parsed at index 10
+2022-05-11 21:43:20.033 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - Text '2022-05-04T00:33:52' could not be parsed at index 10
+2022-05-11 21:46:01.982 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - Text '2022-05-04T00:33:53' could not be parsed at index 10
+2022-05-11 21:49:30.567 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - Text '2022-05-04T00:33:53' could not be parsed at index 10
+2022-05-11 21:50:26.342 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - 商品已存在
+2022-05-11 21:52:11.541 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - 商品已存在
+2022-05-11 21:53:20.768 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - 商品已存在
+2022-05-11 21:55:29.925 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - 商品已存在
+2022-05-11 21:56:35.296 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - 商品已存在
+2022-05-11 21:57:23.735 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - 商品已存在
+2022-05-11 21:59:08.970 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - 商品已存在
+2022-05-11 22:02:18.514 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'DELETE' not supported
+2022-05-11 22:03:12.179 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'DELETE' not supported
+2022-05-11 22:03:48.301 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'DELETE' not supported
+2022-05-11 22:04:13.350 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'DELETE' not supported
+2022-05-11 22:05:06.239 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 22:18:48.053 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2022-05-11 22:29:33.879 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler -  等待发货 -> 等待收货 失败，状态异常 order=订单号：73188932539518977, 订单状态：CANCEL_FINISH

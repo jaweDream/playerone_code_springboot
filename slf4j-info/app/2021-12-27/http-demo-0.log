@@ -1,0 +1,1044 @@
+2021-12-27 16:46:54.513 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2021-12-27 16:46:54.530 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2021-12-27 16:46:54.559 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2021-12-27 16:46:54.566 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ?
+2021-12-27 16:46:54.567 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long)
+2021-12-27 16:46:54.572 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2021-12-27 16:46:58.196 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 16:46:58.197 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 16:46:58.203 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 16:46:58.204 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 16:46:58.204 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 16:46:58.208 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 16:46:58.210 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 16:46:58.210 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 16:46:58.216 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 16:46:58.284 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 16:46:58.284 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 16:46:58.285 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 16:46:58.286 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 16:46:58.286 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 16:46:58.287 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 16:46:58.288 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 16:46:58.288 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 16:46:58.289 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 16:46:58.308 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 16:46:58.308 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 16:46:58.309 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 16:46:58.310 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 16:46:58.310 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 16:46:58.311 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 16:46:58.312 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 16:46:58.312 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 16:46:58.314 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 16:46:58.321 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==>  Preparing: select * from user where username = ?
+2021-12-27 16:46:58.321 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==> Parameters: user(String)
+2021-12-27 16:46:58.323 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - <==      Total: 1
+2021-12-27 16:46:59.822 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 16:46:59.823 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 16:46:59.824 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 16:46:59.825 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 16:46:59.825 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 16:46:59.826 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 16:46:59.828 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 16:46:59.828 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 16:46:59.829 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 16:47:13.974 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 16:47:13.976 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 16:47:13.978 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 16:47:13.980 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 16:47:13.980 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 16:47:13.982 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 16:47:13.982 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 16:47:13.983 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 16:47:13.984 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 16:47:14.006 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 16:47:14.007 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 16:47:14.008 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 16:47:14.009 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 16:47:14.009 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 16:47:14.010 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 16:47:14.011 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 16:47:14.011 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 16:47:14.013 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 16:47:14.015 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==>  Preparing: select * from user where username = ?
+2021-12-27 16:47:14.016 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==> Parameters: user(String)
+2021-12-27 16:47:14.018 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - <==      Total: 1
+2021-12-27 16:47:14.024 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==>  Preparing: SELECT id,goods_id,num,price,user_id,is_active,category_id,create_time FROM cart WHERE (user_id = ?) ORDER BY category_id ASC
+2021-12-27 16:47:14.024 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==> Parameters: 2(Integer)
+2021-12-27 16:47:14.029 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - <==      Total: 5
+2021-12-27 16:47:14.030 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2021-12-27 16:47:14.030 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 20(Integer)
+2021-12-27 16:47:14.032 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2021-12-27 16:47:14.033 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2021-12-27 16:47:14.033 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2021-12-27 16:47:14.037 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2021-12-27 16:47:14.038 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2021-12-27 16:47:14.039 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 13(Integer)
+2021-12-27 16:47:14.040 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2021-12-27 16:47:14.041 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2021-12-27 16:47:14.041 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2021-12-27 16:47:14.042 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2021-12-27 16:47:14.043 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2021-12-27 16:47:14.043 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 23(Integer)
+2021-12-27 16:47:14.044 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2021-12-27 16:47:14.045 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2021-12-27 16:47:14.045 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2021-12-27 16:47:14.046 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2021-12-27 16:47:14.046 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2021-12-27 16:47:14.046 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 6(Integer)
+2021-12-27 16:47:14.047 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2021-12-27 16:47:14.048 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2021-12-27 16:47:14.048 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 22(Integer)
+2021-12-27 16:47:14.050 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2021-12-27 16:47:14.050 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2021-12-27 16:47:14.050 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2021-12-27 16:47:14.051 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2021-12-27 16:47:14.052 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2021-12-27 16:47:14.052 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 26(Integer)
+2021-12-27 16:47:14.053 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2021-12-27 16:47:14.053 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2021-12-27 16:47:14.054 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 24(Integer)
+2021-12-27 16:47:14.054 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2021-12-27 16:47:14.055 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2021-12-27 16:47:14.055 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 21(Integer)
+2021-12-27 16:47:14.056 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2021-12-27 16:47:14.057 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2021-12-27 16:47:14.057 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 24(Integer)
+2021-12-27 16:47:14.057 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2021-12-27 16:47:27.432 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 16:47:27.433 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 16:47:27.435 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 16:47:27.435 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 16:47:27.436 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 16:47:27.437 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 16:47:27.439 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 16:47:27.440 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 16:47:27.442 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 16:47:27.449 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2021-12-27 16:47:27.450 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 0(Integer), 1(Integer)
+2021-12-27 16:47:27.452 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 6
+2021-12-27 16:47:27.455 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2021-12-27 16:47:27.455 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 4(Integer), 1(Integer)
+2021-12-27 16:47:27.457 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2021-12-27 16:47:27.459 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2021-12-27 16:47:27.460 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 22(Integer), 1(Integer)
+2021-12-27 16:47:27.461 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2021-12-27 16:47:27.462 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2021-12-27 16:47:27.463 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 2(Integer), 1(Integer)
+2021-12-27 16:47:27.464 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2021-12-27 16:47:27.465 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2021-12-27 16:47:27.466 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 3(Integer), 1(Integer)
+2021-12-27 16:47:27.467 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2021-12-27 16:47:27.469 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2021-12-27 16:47:27.470 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 5(Integer), 1(Integer)
+2021-12-27 16:47:27.472 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2021-12-27 16:47:27.474 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2021-12-27 16:47:27.474 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 1(Integer), 1(Integer)
+2021-12-27 16:47:27.475 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2021-12-27 16:47:27.494 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 16:47:27.494 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 16:47:27.495 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 16:47:27.496 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 16:47:27.496 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 16:47:27.497 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 16:47:27.497 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 16:47:27.497 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 16:47:27.498 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 16:47:27.502 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2021-12-27 16:47:27.502 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2021-12-27 16:47:27.503 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2021-12-27 16:47:27.504 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ?
+2021-12-27 16:47:27.504 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long)
+2021-12-27 16:47:27.508 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2021-12-27 21:22:33.807 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==>  Preparing: select * from user where username = ?
+2021-12-27 21:22:33.836 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==> Parameters: user(String)
+2021-12-27 21:22:33.853 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - <==      Total: 1
+2021-12-27 21:22:33.869 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==>  Preparing: SELECT id,goods_id,num,price,user_id,is_active,category_id,create_time FROM cart WHERE (user_id = ?) ORDER BY category_id ASC
+2021-12-27 21:22:33.873 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==> Parameters: 2(Integer)
+2021-12-27 21:22:33.879 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - <==      Total: 5
+2021-12-27 21:22:33.882 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2021-12-27 21:22:33.883 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 20(Integer)
+2021-12-27 21:22:33.888 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2021-12-27 21:22:33.891 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2021-12-27 21:22:33.891 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2021-12-27 21:22:33.893 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2021-12-27 21:22:33.894 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2021-12-27 21:22:33.894 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 13(Integer)
+2021-12-27 21:22:33.896 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2021-12-27 21:22:33.896 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2021-12-27 21:22:33.897 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2021-12-27 21:22:33.897 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2021-12-27 21:22:33.898 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2021-12-27 21:22:33.898 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 23(Integer)
+2021-12-27 21:22:33.900 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2021-12-27 21:22:33.901 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2021-12-27 21:22:33.901 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2021-12-27 21:22:33.902 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2021-12-27 21:22:33.904 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2021-12-27 21:22:33.904 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 6(Integer)
+2021-12-27 21:22:33.907 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2021-12-27 21:22:33.908 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2021-12-27 21:22:33.908 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 22(Integer)
+2021-12-27 21:22:33.909 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2021-12-27 21:22:33.909 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2021-12-27 21:22:33.910 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2021-12-27 21:22:33.911 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2021-12-27 21:22:33.911 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2021-12-27 21:22:33.911 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 26(Integer)
+2021-12-27 21:22:33.912 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2021-12-27 21:22:33.913 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2021-12-27 21:22:33.913 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 24(Integer)
+2021-12-27 21:22:33.913 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2021-12-27 21:22:33.914 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2021-12-27 21:22:33.915 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 21(Integer)
+2021-12-27 21:22:33.916 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2021-12-27 21:22:33.917 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2021-12-27 21:22:33.917 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 24(Integer)
+2021-12-27 21:22:33.918 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2021-12-27 21:22:41.180 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2021-12-27 21:22:41.182 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2021-12-27 21:22:41.184 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2021-12-27 21:22:41.187 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ?
+2021-12-27 21:22:41.188 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long)
+2021-12-27 21:22:41.192 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2021-12-27 21:22:44.747 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2021-12-27 21:22:44.748 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2021-12-27 21:22:44.750 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2021-12-27 21:22:44.751 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ?
+2021-12-27 21:22:44.752 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long)
+2021-12-27 21:22:44.756 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2021-12-27 21:25:06.510 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:06.511 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:06.513 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:06.515 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:06.516 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:06.519 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:06.522 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:06.522 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:06.531 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:06.599 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:06.600 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:06.601 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:06.602 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:06.603 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:06.604 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:06.605 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:06.605 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:06.606 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:06.619 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:06.619 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:06.620 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:06.621 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:06.621 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:06.622 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:06.623 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:06.623 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:06.624 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:06.629 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==>  Preparing: select * from user where username = ?
+2021-12-27 21:25:06.629 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==> Parameters: user(String)
+2021-12-27 21:25:06.630 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - <==      Total: 1
+2021-12-27 21:25:08.146 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:08.147 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:08.148 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:08.149 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:08.150 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:08.151 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:08.152 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:08.152 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:08.153 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:14.528 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:14.528 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:14.529 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:14.530 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:14.531 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:14.532 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:14.533 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:14.533 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:14.534 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:14.538 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2021-12-27 21:25:14.538 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2021-12-27 21:25:14.539 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2021-12-27 21:25:14.540 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ?
+2021-12-27 21:25:14.541 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long)
+2021-12-27 21:25:14.543 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2021-12-27 21:25:16.961 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:16.962 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:16.963 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:16.963 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:16.964 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:16.964 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:16.965 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:16.965 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:16.966 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:16.972 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2021-12-27 21:25:16.973 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2021-12-27 21:25:16.974 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2021-12-27 21:25:16.982 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ? OFFSET ?
+2021-12-27 21:25:16.982 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long), 8(Long)
+2021-12-27 21:25:16.983 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2021-12-27 21:25:18.236 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:18.237 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:18.238 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:18.240 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:18.240 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:18.242 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:18.243 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:18.244 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:18.245 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:18.310 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2021-12-27 21:25:18.311 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2021-12-27 21:25:18.312 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2021-12-27 21:25:18.313 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ? OFFSET ?
+2021-12-27 21:25:18.313 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long), 16(Long)
+2021-12-27 21:25:18.315 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 4
+2021-12-27 21:25:19.922 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:19.923 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:19.931 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:19.932 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:19.932 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:19.934 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:19.935 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:19.935 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:19.936 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:19.941 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2021-12-27 21:25:19.943 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2021-12-27 21:25:19.945 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2021-12-27 21:25:22.548 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:22.549 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:22.550 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:22.551 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:22.551 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:22.552 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:22.553 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:22.553 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:22.554 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:22.570 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2021-12-27 21:25:22.570 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2021-12-27 21:25:22.571 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2021-12-27 21:25:22.580 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id, goods_name, category_id, description, price, stock, sales, cover_url, is_on, is_recommend, create_time, update_time FROM goods WHERE (goods_name LIKE ?) ORDER BY sales DESC LIMIT ?
+2021-12-27 21:25:22.581 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long)
+2021-12-27 21:25:22.583 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2021-12-27 21:25:24.441 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:24.442 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:24.443 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:24.444 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:24.444 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:24.445 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:24.445 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:24.446 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:24.447 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:24.450 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2021-12-27 21:25:24.450 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2021-12-27 21:25:24.451 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2021-12-27 21:25:24.451 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id, goods_name, category_id, description, price, stock, sales, cover_url, is_on, is_recommend, create_time, update_time FROM goods WHERE (goods_name LIKE ?) ORDER BY create_time DESC LIMIT ?
+2021-12-27 21:25:24.452 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long)
+2021-12-27 21:25:24.453 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2021-12-27 21:25:28.059 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:28.060 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:28.062 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:28.062 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:28.063 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:28.064 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:28.064 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:28.065 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:28.067 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:28.099 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2021-12-27 21:25:28.100 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 0(Integer), 1(Integer)
+2021-12-27 21:25:28.102 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 6
+2021-12-27 21:25:28.103 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2021-12-27 21:25:28.104 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 4(Integer), 1(Integer)
+2021-12-27 21:25:28.105 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2021-12-27 21:25:28.106 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2021-12-27 21:25:28.107 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 22(Integer), 1(Integer)
+2021-12-27 21:25:28.111 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2021-12-27 21:25:28.133 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2021-12-27 21:25:28.134 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 2(Integer), 1(Integer)
+2021-12-27 21:25:28.135 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2021-12-27 21:25:28.136 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2021-12-27 21:25:28.136 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 3(Integer), 1(Integer)
+2021-12-27 21:25:28.137 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2021-12-27 21:25:28.138 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2021-12-27 21:25:28.138 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 5(Integer), 1(Integer)
+2021-12-27 21:25:28.139 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2021-12-27 21:25:28.140 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2021-12-27 21:25:28.140 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 1(Integer), 1(Integer)
+2021-12-27 21:25:28.141 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2021-12-27 21:25:28.153 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:28.154 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:28.154 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:28.154 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:28.155 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:28.155 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:28.155 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:28.155 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:28.156 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:28.305 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2021-12-27 21:25:28.306 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2021-12-27 21:25:28.306 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2021-12-27 21:25:28.307 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ?
+2021-12-27 21:25:28.307 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long)
+2021-12-27 21:25:28.309 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2021-12-27 21:25:29.889 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:29.890 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:29.891 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:29.892 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:29.892 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:29.893 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:29.893 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:29.893 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:29.894 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:29.903 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ? AND category_id = ?)
+2021-12-27 21:25:29.903 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String), 8(String)
+2021-12-27 21:25:29.905 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2021-12-27 21:25:29.906 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ? AND category_id = ?) LIMIT ?
+2021-12-27 21:25:29.907 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(String), 8(Long)
+2021-12-27 21:25:29.908 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2021-12-27 21:25:31.143 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:31.144 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:31.144 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:31.145 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:31.145 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:31.146 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:31.147 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:31.147 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:31.148 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:31.152 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ? AND category_id = ?)
+2021-12-27 21:25:31.153 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String), 8(String)
+2021-12-27 21:25:31.154 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2021-12-27 21:25:31.155 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ? AND category_id = ?) LIMIT ? OFFSET ?
+2021-12-27 21:25:31.156 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(String), 8(Long), 8(Long)
+2021-12-27 21:25:31.158 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 1
+2021-12-27 21:25:31.921 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:31.922 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:31.924 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:31.924 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:31.925 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:31.926 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:31.926 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:31.927 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:31.928 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:31.935 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ? AND category_id = ?)
+2021-12-27 21:25:31.936 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String), 8(String)
+2021-12-27 21:25:31.939 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2021-12-27 21:25:34.057 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:34.058 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:34.059 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:34.059 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:34.060 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:34.061 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:34.061 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:34.061 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:34.063 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:34.067 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ? AND category_id = ?)
+2021-12-27 21:25:34.069 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String), 23(String)
+2021-12-27 21:25:34.070 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2021-12-27 21:25:34.071 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ? AND category_id = ?) LIMIT ?
+2021-12-27 21:25:34.072 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 23(String), 8(Long)
+2021-12-27 21:25:34.074 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 1
+2021-12-27 21:25:35.713 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:35.714 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:35.716 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:35.718 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:35.718 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:35.719 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:35.720 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:35.720 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:35.722 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:35.735 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:35.735 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:35.736 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:35.736 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:35.736 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:35.737 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:35.738 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:35.738 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:35.739 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:35.742 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==>  Preparing: select * from user where username = ?
+2021-12-27 21:25:35.743 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==> Parameters: user(String)
+2021-12-27 21:25:35.744 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - <==      Total: 1
+2021-12-27 21:25:35.745 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==>  Preparing: SELECT id,goods_id,num,price,user_id,is_active,category_id,create_time FROM cart WHERE (user_id = ?) ORDER BY category_id ASC
+2021-12-27 21:25:35.746 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==> Parameters: 2(Integer)
+2021-12-27 21:25:35.747 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - <==      Total: 5
+2021-12-27 21:25:35.748 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2021-12-27 21:25:35.748 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 20(Integer)
+2021-12-27 21:25:35.750 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2021-12-27 21:25:35.750 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2021-12-27 21:25:35.750 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2021-12-27 21:25:35.751 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2021-12-27 21:25:35.752 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2021-12-27 21:25:35.752 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 13(Integer)
+2021-12-27 21:25:35.753 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2021-12-27 21:25:35.755 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2021-12-27 21:25:35.755 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2021-12-27 21:25:35.756 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2021-12-27 21:25:35.756 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2021-12-27 21:25:35.757 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 23(Integer)
+2021-12-27 21:25:35.758 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2021-12-27 21:25:35.759 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2021-12-27 21:25:35.759 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2021-12-27 21:25:35.760 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2021-12-27 21:25:35.760 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2021-12-27 21:25:35.761 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 6(Integer)
+2021-12-27 21:25:35.762 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2021-12-27 21:25:35.762 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2021-12-27 21:25:35.762 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 22(Integer)
+2021-12-27 21:25:35.763 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2021-12-27 21:25:35.764 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2021-12-27 21:25:35.764 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2021-12-27 21:25:35.765 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2021-12-27 21:25:35.766 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2021-12-27 21:25:35.766 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 26(Integer)
+2021-12-27 21:25:35.767 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2021-12-27 21:25:35.768 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2021-12-27 21:25:35.768 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 24(Integer)
+2021-12-27 21:25:35.768 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2021-12-27 21:25:35.769 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2021-12-27 21:25:35.769 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 21(Integer)
+2021-12-27 21:25:35.770 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2021-12-27 21:25:35.770 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2021-12-27 21:25:35.770 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 24(Integer)
+2021-12-27 21:25:35.771 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2021-12-27 21:25:41.071 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:41.071 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:41.072 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:41.073 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:41.073 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:41.074 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:41.074 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:41.074 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:41.075 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:41.089 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2021-12-27 21:25:41.089 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 25(Integer)
+2021-12-27 21:25:41.172 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2021-12-27 21:25:41.184 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:41.184 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:41.185 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:41.186 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:41.186 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:41.188 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:41.189 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:41.189 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:41.190 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:41.191 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2021-12-27 21:25:41.192 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 29(Integer)
+2021-12-27 21:25:41.314 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2021-12-27 21:25:42.474 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:42.475 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:42.475 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:42.476 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:42.476 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:42.477 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:42.478 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:42.478 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:42.479 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:42.481 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2021-12-27 21:25:42.482 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 16(Integer)
+2021-12-27 21:25:43.126 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2021-12-27 21:25:43.135 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:43.135 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:43.180 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:43.180 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:43.180 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:43.181 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:43.182 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:43.183 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:43.184 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:43.229 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2021-12-27 21:25:43.229 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 30(Integer)
+2021-12-27 21:25:43.314 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2021-12-27 21:25:44.099 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:44.099 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:44.100 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:44.101 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:44.101 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:44.101 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:44.102 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:44.102 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:44.103 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:44.105 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2021-12-27 21:25:44.105 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 16(Integer)
+2021-12-27 21:25:44.147 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2021-12-27 21:25:44.158 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:44.158 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:44.159 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:44.159 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:44.160 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:44.160 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:44.160 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:44.161 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:44.161 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:44.175 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2021-12-27 21:25:44.176 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 30(Integer)
+2021-12-27 21:25:44.287 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2021-12-27 21:25:45.312 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:45.313 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:45.314 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:45.315 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:45.315 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:45.316 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:45.316 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:45.317 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:45.318 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:45.319 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2021-12-27 21:25:45.319 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 16(Integer)
+2021-12-27 21:25:45.375 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2021-12-27 21:25:45.383 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:45.384 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:45.385 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:45.386 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:45.403 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:45.404 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:45.405 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:45.406 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:45.407 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:45.409 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2021-12-27 21:25:45.409 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 30(Integer)
+2021-12-27 21:25:45.536 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2021-12-27 21:25:45.551 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:45.552 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:45.553 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:45.554 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:45.554 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:45.555 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:45.555 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:45.556 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:45.578 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:45.590 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2021-12-27 21:25:45.591 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 25(Integer)
+2021-12-27 21:25:45.738 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2021-12-27 21:25:45.750 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:45.781 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:45.782 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:45.782 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:45.783 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:45.784 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:45.784 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:45.784 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:45.785 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:45.820 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2021-12-27 21:25:45.820 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 29(Integer)
+2021-12-27 21:25:46.023 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2021-12-27 21:25:46.059 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:46.059 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:46.060 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:46.060 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:46.061 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:46.061 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:46.061 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:46.084 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:46.085 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:46.105 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2021-12-27 21:25:46.106 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 26(Integer)
+2021-12-27 21:25:46.230 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2021-12-27 21:25:47.013 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:47.013 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:47.014 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:47.014 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:47.014 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:47.015 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:47.016 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:47.017 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:47.017 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:47.021 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2021-12-27 21:25:47.022 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 16(Integer)
+2021-12-27 21:25:47.119 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2021-12-27 21:25:47.149 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:47.150 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:47.150 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:47.190 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:47.191 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:47.192 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:47.193 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:47.193 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:47.194 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:47.204 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2021-12-27 21:25:47.204 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 30(Integer)
+2021-12-27 21:25:47.259 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2021-12-27 21:25:47.295 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:47.295 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:47.310 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:47.310 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:47.311 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:47.311 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:47.312 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:47.312 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:47.314 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:47.316 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2021-12-27 21:25:47.317 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 25(Integer)
+2021-12-27 21:25:47.384 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2021-12-27 21:25:47.394 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:47.394 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:47.410 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:47.411 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:47.411 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:47.412 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:47.412 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:47.413 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:47.413 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:47.415 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2021-12-27 21:25:47.415 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 29(Integer)
+2021-12-27 21:25:47.538 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2021-12-27 21:25:47.548 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:25:47.548 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:25:47.549 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:25:47.549 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:25:47.550 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:25:47.550 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:25:47.565 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:25:47.566 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:25:47.567 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:25:48.095 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2021-12-27 21:25:48.096 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 26(Integer)
+2021-12-27 21:25:48.280 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2021-12-27 21:26:02.362 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:26:02.362 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:26:02.363 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:26:02.363 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:26:02.364 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:26:02.365 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:26:02.365 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:26:02.366 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:26:02.367 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:26:02.390 [DEBUG] com.jawe.system.mapper.AddressMapper.selectList - ==>  Preparing: SELECT id,user_id,mobile,address,detail,name,tag,is_default FROM address WHERE (user_id = ?) ORDER BY is_default DESC
+2021-12-27 21:26:02.390 [DEBUG] com.jawe.system.mapper.AddressMapper.selectList - ==> Parameters: 2(Integer)
+2021-12-27 21:26:02.433 [DEBUG] com.jawe.system.mapper.AddressMapper.selectList - <==      Total: 4
+2021-12-27 21:26:04.097 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:26:04.098 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:26:04.099 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:26:04.099 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:26:04.099 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:26:04.100 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:26:04.100 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:26:04.101 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:26:04.103 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:26:04.106 [DEBUG] com.jawe.system.mapper.AddressMapper.selectOne - ==>  Preparing: SELECT id,user_id,mobile,address,detail,name,tag,is_default FROM address WHERE (user_id = ? AND is_default = ?)
+2021-12-27 21:26:04.107 [DEBUG] com.jawe.system.mapper.AddressMapper.selectOne - ==> Parameters: 2(Integer), 1(Integer)
+2021-12-27 21:26:04.108 [DEBUG] com.jawe.system.mapper.AddressMapper.selectOne - <==      Total: 1
+2021-12-27 21:26:04.118 [DEBUG] com.jawe.system.mapper.AddressMapper.update - ==>  Preparing: UPDATE address SET is_default=? WHERE (id = ?)
+2021-12-27 21:26:04.121 [DEBUG] com.jawe.system.mapper.AddressMapper.update - ==> Parameters: 0(Integer), 9(Integer)
+2021-12-27 21:26:04.179 [DEBUG] com.jawe.system.mapper.AddressMapper.update - <==    Updates: 1
+2021-12-27 21:26:04.208 [DEBUG] com.jawe.system.mapper.AddressMapper.update - ==>  Preparing: UPDATE address SET is_default=? WHERE (id = ?)
+2021-12-27 21:26:04.208 [DEBUG] com.jawe.system.mapper.AddressMapper.update - ==> Parameters: 1(Integer), 4(Integer)
+2021-12-27 21:26:04.453 [DEBUG] com.jawe.system.mapper.AddressMapper.update - <==    Updates: 1
+2021-12-27 21:26:05.525 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:26:05.525 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:26:05.526 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:26:05.526 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:26:05.527 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:26:05.527 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:26:05.528 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:26:05.528 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:26:05.528 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:26:05.531 [DEBUG] com.jawe.system.mapper.AddressMapper.selectOne - ==>  Preparing: SELECT id,user_id,mobile,address,detail,name,tag,is_default FROM address WHERE (user_id = ? AND is_default = ?)
+2021-12-27 21:26:05.531 [DEBUG] com.jawe.system.mapper.AddressMapper.selectOne - ==> Parameters: 2(Integer), 1(Integer)
+2021-12-27 21:26:05.532 [DEBUG] com.jawe.system.mapper.AddressMapper.selectOne - <==      Total: 1
+2021-12-27 21:26:05.534 [DEBUG] com.jawe.system.mapper.AddressMapper.update - ==>  Preparing: UPDATE address SET is_default=? WHERE (id = ?)
+2021-12-27 21:26:05.534 [DEBUG] com.jawe.system.mapper.AddressMapper.update - ==> Parameters: 0(Integer), 4(Integer)
+2021-12-27 21:26:05.589 [DEBUG] com.jawe.system.mapper.AddressMapper.update - <==    Updates: 1
+2021-12-27 21:26:05.632 [DEBUG] com.jawe.system.mapper.AddressMapper.update - ==>  Preparing: UPDATE address SET is_default=? WHERE (id = ?)
+2021-12-27 21:26:05.632 [DEBUG] com.jawe.system.mapper.AddressMapper.update - ==> Parameters: 1(Integer), 7(Integer)
+2021-12-27 21:26:05.836 [DEBUG] com.jawe.system.mapper.AddressMapper.update - <==    Updates: 1
+2021-12-27 21:26:09.728 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:26:09.729 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:26:09.730 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:26:09.732 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:26:09.732 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:26:09.734 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:26:09.734 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:26:09.735 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:26:09.737 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:26:09.743 [DEBUG] com.jawe.system.mapper.AddressMapper.selectOne - ==>  Preparing: SELECT id,user_id,mobile,address,detail,name,tag,is_default FROM address WHERE (id = ? AND user_id = ?)
+2021-12-27 21:26:09.743 [DEBUG] com.jawe.system.mapper.AddressMapper.selectOne - ==> Parameters: 8(Integer), 2(Integer)
+2021-12-27 21:26:09.744 [DEBUG] com.jawe.system.mapper.AddressMapper.selectOne - <==      Total: 1
+2021-12-27 21:26:15.739 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:26:15.740 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:26:15.740 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:26:15.746 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:26:15.747 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:26:15.747 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:26:15.748 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:26:15.748 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:26:15.749 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:26:20.697 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:26:20.698 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: user(String)
+2021-12-27 21:26:20.700 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:26:20.701 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:26:20.701 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: user(String)
+2021-12-27 21:26:20.702 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:26:20.703 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:26:20.703 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: common(String)
+2021-12-27 21:26:20.705 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 1
+2021-12-27 21:26:21.742 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2021-12-27 21:26:21.742 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2021-12-27 21:26:21.743 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2021-12-27 21:26:21.744 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ?
+2021-12-27 21:26:21.744 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long)
+2021-12-27 21:26:21.746 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2021-12-27 21:34:51.230 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==>  Preparing: select * from user where username = ?
+2021-12-27 21:34:51.231 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==> Parameters: null
+2021-12-27 21:34:51.231 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - <==      Total: 0
+2021-12-27 21:34:53.292 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:34:53.292 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:34:53.293 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:34:53.294 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:34:53.294 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:34:53.295 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:34:53.296 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:34:53.296 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:34:53.297 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:34:53.366 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:34:53.366 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:34:53.367 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:34:53.368 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:34:53.368 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:34:53.369 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:34:53.369 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:34:53.370 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:34:53.370 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:34:53.384 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:34:53.385 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:34:53.386 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:34:53.386 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:34:53.386 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:34:53.387 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:34:53.388 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:34:53.388 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:34:53.389 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:34:53.392 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==>  Preparing: select * from user where username = ?
+2021-12-27 21:34:53.393 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==> Parameters: admin(String)
+2021-12-27 21:34:53.394 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - <==      Total: 1
+2021-12-27 21:35:03.186 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:35:03.187 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:35:03.187 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:35:03.188 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:35:03.188 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:35:03.189 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:35:03.189 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:35:03.190 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:35:03.191 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:35:03.192 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:35:03.193 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:35:03.193 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:35:03.194 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:35:03.194 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:35:03.194 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:35:03.195 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:35:03.195 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:35:03.196 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:35:03.264 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:35:03.265 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:35:03.266 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:35:03.267 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:35:03.268 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:35:03.269 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:35:03.270 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:35:03.270 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:35:03.272 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:35:03.285 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:35:03.285 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:35:03.286 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:35:03.287 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:35:03.287 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:35:03.288 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:35:03.288 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:35:03.288 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:35:03.289 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:35:03.291 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==>  Preparing: select * from user where username = ?
+2021-12-27 21:35:03.291 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==> Parameters: admin(String)
+2021-12-27 21:35:03.292 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - <==      Total: 1
+2021-12-27 21:35:06.060 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:35:06.061 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:35:06.062 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:35:06.062 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:35:06.062 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:35:06.063 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:35:06.063 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:35:06.064 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:35:06.065 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:35:06.208 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM `user` u
+2021-12-27 21:35:06.209 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - ==> Parameters: 
+2021-12-27 21:35:06.209 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - <==      Total: 1
+2021-12-27 21:35:06.210 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - ==>  Preparing: select u.* from `user` u LIMIT ?
+2021-12-27 21:35:06.211 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - ==> Parameters: 7(Long)
+2021-12-27 21:35:06.213 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - <==      Total: 7
+2021-12-27 21:35:08.640 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:35:08.641 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:35:08.642 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:35:08.643 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:35:08.643 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:35:08.645 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:35:08.646 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:35:08.646 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:35:08.647 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:35:08.652 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM `user` u
+2021-12-27 21:35:08.653 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - ==> Parameters: 
+2021-12-27 21:35:08.654 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - <==      Total: 1
+2021-12-27 21:35:08.654 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - ==>  Preparing: select u.* from `user` u LIMIT ? OFFSET ?
+2021-12-27 21:35:08.655 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - ==> Parameters: 7(Long), 7(Long)
+2021-12-27 21:35:08.657 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - <==      Total: 7
+2021-12-27 21:35:10.160 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:35:10.161 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:35:10.162 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:35:10.163 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:35:10.163 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:35:10.164 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:35:10.165 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:35:10.166 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:35:10.167 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:35:10.170 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM `user` u
+2021-12-27 21:35:10.171 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - ==> Parameters: 
+2021-12-27 21:35:10.172 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - <==      Total: 1
+2021-12-27 21:35:10.173 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - ==>  Preparing: select u.* from `user` u LIMIT ? OFFSET ?
+2021-12-27 21:35:10.174 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - ==> Parameters: 7(Long), 14(Long)
+2021-12-27 21:35:10.175 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - <==      Total: 1
+2021-12-27 21:35:15.050 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:35:15.051 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:35:15.051 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:35:15.052 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:35:15.052 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:35:15.053 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:35:15.054 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:35:15.054 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:35:15.055 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:35:15.057 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM `user` u WHERE (username LIKE ?)
+2021-12-27 21:35:15.058 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - ==> Parameters: %user%(String)
+2021-12-27 21:35:15.059 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - <==      Total: 1
+2021-12-27 21:35:15.059 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - ==>  Preparing: select u.* from `user` u WHERE (username LIKE ?) LIMIT ?
+2021-12-27 21:35:15.059 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - ==> Parameters: %user%(String), 7(Long)
+2021-12-27 21:35:15.061 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - <==      Total: 7
+2021-12-27 21:35:18.228 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:35:18.229 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:35:18.231 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:35:18.232 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:35:18.234 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:35:18.235 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:35:18.236 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:35:18.236 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:35:18.238 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:35:18.255 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM `goods` g
+2021-12-27 21:35:18.255 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - ==> Parameters: 
+2021-12-27 21:35:18.259 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - <==      Total: 1
+2021-12-27 21:35:18.260 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - ==>  Preparing: select g.* from `goods` g LIMIT ?
+2021-12-27 21:35:18.261 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - ==> Parameters: 7(Long)
+2021-12-27 21:35:18.264 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - <==      Total: 7
+2021-12-27 21:35:25.090 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:35:25.090 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:35:25.091 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:35:25.091 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:35:25.099 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:35:25.099 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:35:25.100 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:35:25.100 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:35:25.101 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:35:25.157 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2021-12-27 21:35:25.157 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 0(Integer)
+2021-12-27 21:35:25.159 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 6
+2021-12-27 21:35:25.169 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2021-12-27 21:35:25.170 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 4(Integer)
+2021-12-27 21:35:25.183 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2021-12-27 21:35:25.222 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2021-12-27 21:35:25.223 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 22(Integer)
+2021-12-27 21:35:25.225 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2021-12-27 21:35:25.235 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2021-12-27 21:35:25.273 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 2(Integer)
+2021-12-27 21:35:25.276 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2021-12-27 21:35:25.289 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2021-12-27 21:35:25.290 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 3(Integer)
+2021-12-27 21:35:25.291 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2021-12-27 21:35:25.293 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2021-12-27 21:35:25.294 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 5(Integer)
+2021-12-27 21:35:25.294 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2021-12-27 21:35:25.296 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2021-12-27 21:35:25.296 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 1(Integer)
+2021-12-27 21:35:25.298 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2021-12-27 21:35:27.663 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:35:27.663 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:35:27.664 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:35:27.664 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:35:27.664 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:35:27.665 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:35:27.665 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:35:27.665 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:35:27.666 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:35:27.668 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.isEnable - ==>  Preparing: update goods_category set enable=ABS(enable-1) where id = ?
+2021-12-27 21:35:27.668 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.isEnable - ==> Parameters: 4(Integer)
+2021-12-27 21:35:27.756 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.isEnable - <==    Updates: 1
+2021-12-27 21:35:28.668 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:35:28.668 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:35:28.669 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:35:28.669 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:35:28.669 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:35:28.670 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:35:28.670 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:35:28.671 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:35:28.672 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:35:28.675 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.isEnable - ==>  Preparing: update goods_category set enable=ABS(enable-1) where id = ?
+2021-12-27 21:35:28.676 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.isEnable - ==> Parameters: 4(Integer)
+2021-12-27 21:35:28.778 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.isEnable - <==    Updates: 1
+2021-12-27 21:35:32.091 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:35:32.092 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:35:32.093 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:35:32.093 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:35:32.094 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:35:32.095 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:35:32.095 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:35:32.096 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:35:32.097 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:35:32.108 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?)
+2021-12-27 21:35:32.108 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 0(Integer)
+2021-12-27 21:35:32.110 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 6
+2021-12-27 21:35:32.345 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:35:32.346 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:35:32.348 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:35:32.349 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:35:32.350 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:35:32.351 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:35:32.351 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:35:32.352 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:35:32.353 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:35:32.357 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2021-12-27 21:35:32.358 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 9(Integer)
+2021-12-27 21:35:32.359 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2021-12-27 21:35:39.800 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:35:39.801 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:35:39.802 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:35:39.803 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:35:39.803 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:35:39.804 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:35:39.807 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:35:39.807 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:35:39.809 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:35:39.833 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.updateById - ==>  Preparing: UPDATE goods_category SET pid=?, name=?, update_time=? WHERE id=?
+2021-12-27 21:35:39.839 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.updateById - ==> Parameters: 4(Integer), 生化危机(String), 2021-12-27 21:35:39.832(Timestamp), 9(Integer)
+2021-12-27 21:35:39.885 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.updateById - <==    Updates: 1
+2021-12-27 21:35:51.987 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2021-12-27 21:35:51.988 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2021-12-27 21:35:51.989 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2021-12-27 21:35:51.990 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2021-12-27 21:35:51.990 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2021-12-27 21:35:51.991 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2021-12-27 21:35:51.991 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2021-12-27 21:35:51.992 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2021-12-27 21:35:51.992 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2021-12-27 21:35:51.996 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2021-12-27 21:35:51.996 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 0(Integer)
+2021-12-27 21:35:51.998 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 6
+2021-12-27 21:35:52.002 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2021-12-27 21:35:52.002 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 4(Integer)
+2021-12-27 21:35:52.004 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2021-12-27 21:35:52.007 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2021-12-27 21:35:52.008 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 22(Integer)
+2021-12-27 21:35:52.009 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2021-12-27 21:35:52.011 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2021-12-27 21:35:52.012 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 2(Integer)
+2021-12-27 21:35:52.013 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2021-12-27 21:35:52.015 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2021-12-27 21:35:52.016 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 3(Integer)
+2021-12-27 21:35:52.018 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2021-12-27 21:35:52.022 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2021-12-27 21:35:52.022 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 5(Integer)
+2021-12-27 21:35:52.024 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2021-12-27 21:35:52.026 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2021-12-27 21:35:52.027 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 1(Integer)
+2021-12-27 21:35:52.028 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2

@@ -1,0 +1,56 @@
+2021-10-30 08:06:34.546 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-30 14:48:25.674 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8881 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8881 or configure this application to listen on another port.
+
+2021-10-30 15:01:07.753 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8881 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8881 or configure this application to listen on another port.
+
+2021-10-30 15:01:40.695 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8881 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8881 or configure this application to listen on another port.
+
+2021-10-30 16:31:21.164 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-30 17:16:03.898 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-30 17:17:09.900 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-30 17:33:30.005 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-30 17:38:05.224 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-30 18:18:32.040 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-30 18:26:23.657 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-30 18:37:03.766 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-30 18:40:19.694 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-30 19:24:09.894 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-30 19:27:02.470 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-30 23:33:03.974 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-30 23:50:28.323 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - null

@@ -1,0 +1,48 @@
+2021-11-29 21:49:29.040 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "12121212121": Overflow: numeric value (12121212121) out of range of Integer (-2147483648 - 2147483647); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "12121212121": Overflow: numeric value (12121212121) out of range of Integer (-2147483648 - 2147483647)
+ at [Source: (PushbackInputStream); line: 1, column: 33] (through reference chain: com.jawe.system.entity.Address["mobile"])
+2021-11-29 21:51:22.433 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - JSON parse error: Cannot deserialize instance of `java.lang.Integer` out of VALUE_TRUE token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.lang.Integer` out of VALUE_TRUE token
+ at [Source: (PushbackInputStream); line: 1, column: 152] (through reference chain: com.jawe.system.entity.Address["isDefault"])
+2021-11-29 21:51:23.863 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - JSON parse error: Cannot deserialize instance of `java.lang.Integer` out of VALUE_TRUE token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.lang.Integer` out of VALUE_TRUE token
+ at [Source: (PushbackInputStream); line: 1, column: 152] (through reference chain: com.jawe.system.entity.Address["isDefault"])
+2021-11-29 21:57:39.324 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+### The error may exist in com/jawe/system/mapper/AddressMapper.java (best guess)
+### The error may involve com.jawe.system.mapper.AddressMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO address  ( mobile, number, detail, name, tag, is_default )  VALUES  ( ?, ?, ?, ?, ?, ? )
+### Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+; Field 'id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'id' doesn't have a default value
+2021-11-29 22:01:20.818 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+### The error may exist in com/jawe/system/mapper/AddressMapper.java (best guess)
+### The error may involve com.jawe.system.mapper.AddressMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO address  ( mobile, number, detail, name, tag, is_default )  VALUES  ( ?, ?, ?, ?, ?, ? )
+### Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+; Field 'id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'id' doesn't have a default value
+2021-11-29 22:02:32.330 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+### The error may exist in com/jawe/system/mapper/AddressMapper.java (best guess)
+### The error may involve com.jawe.system.mapper.AddressMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO address  ( mobile, number, detail, name, tag, is_default )  VALUES  ( ?, ?, ?, ?, ?, ? )
+### Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+; Field 'user_id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'user_id' doesn't have a default value
+2021-11-29 22:05:19.073 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+### The error may exist in com/jawe/system/mapper/AddressMapper.java (best guess)
+### The error may involve com.jawe.system.mapper.AddressMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO address  ( mobile, number, detail, name, tag, is_default )  VALUES  ( ?, ?, ?, ?, ?, ? )
+### Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+; Field 'user_id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'user_id' doesn't have a default value
+2021-11-29 22:06:06.148 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - 
+### Error updating database.  Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+### The error may exist in com/jawe/system/mapper/AddressMapper.java (best guess)
+### The error may involve com.jawe.system.mapper.AddressMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO address  ( mobile, number, detail, name, tag, is_default )  VALUES  ( ?, ?, ?, ?, ?, ? )
+### Cause: java.sql.SQLException: Field 'user_id' doesn't have a default value
+; Field 'user_id' doesn't have a default value; nested exception is java.sql.SQLException: Field 'user_id' doesn't have a default value
+2021-11-29 22:07:12.502 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - JSON parse error: Cannot deserialize instance of `java.lang.Integer` out of VALUE_FALSE token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.lang.Integer` out of VALUE_FALSE token
+ at [Source: (PushbackInputStream); line: 1, column: 163] (through reference chain: com.jawe.system.entity.Address["isDefault"])

@@ -1,0 +1,591 @@
+2022-01-09 14:31:31.669 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2022-01-09 14:31:31.868 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2022-01-09 14:31:32.321 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2022-01-09 14:31:32.331 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2022-01-09 14:31:32.347 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2022-01-09 14:31:32.449 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2022-01-09 14:31:32.602 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2022-01-09 14:31:32.603 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2022-01-09 14:31:32.614 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2022-01-09 14:31:32.691 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2022-01-09 14:31:32.692 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2022-01-09 14:31:32.693 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2022-01-09 14:31:32.694 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2022-01-09 14:31:32.695 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2022-01-09 14:31:32.697 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2022-01-09 14:31:32.697 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2022-01-09 14:31:32.698 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2022-01-09 14:31:32.701 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2022-01-09 14:31:33.466 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2022-01-09 14:31:33.467 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2022-01-09 14:31:33.468 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2022-01-09 14:31:33.469 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2022-01-09 14:31:33.469 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2022-01-09 14:31:33.470 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2022-01-09 14:31:33.471 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2022-01-09 14:31:33.471 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2022-01-09 14:31:33.472 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2022-01-09 14:31:33.482 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==>  Preparing: select * from user where username = ?
+2022-01-09 14:31:33.483 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==> Parameters: admin(String)
+2022-01-09 14:31:33.487 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - <==      Total: 1
+2022-01-09 14:31:37.251 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2022-01-09 14:31:37.251 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2022-01-09 14:31:37.253 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2022-01-09 14:31:37.253 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2022-01-09 14:31:37.254 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2022-01-09 14:31:37.255 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2022-01-09 14:31:37.256 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2022-01-09 14:31:37.256 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2022-01-09 14:31:37.257 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2022-01-09 14:31:37.307 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM `user` u
+2022-01-09 14:31:37.307 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - ==> Parameters: 
+2022-01-09 14:31:37.309 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - <==      Total: 1
+2022-01-09 14:31:37.314 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - ==>  Preparing: select u.* from `user` u LIMIT ?
+2022-01-09 14:31:37.314 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - ==> Parameters: 7(Long)
+2022-01-09 14:31:37.318 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - <==      Total: 7
+2022-01-09 14:31:39.690 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2022-01-09 14:31:39.691 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2022-01-09 14:31:39.693 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2022-01-09 14:31:39.694 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2022-01-09 14:31:39.695 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2022-01-09 14:31:39.695 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2022-01-09 14:31:39.696 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2022-01-09 14:31:39.696 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2022-01-09 14:31:39.697 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2022-01-09 14:31:39.707 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM `goods` g
+2022-01-09 14:31:39.707 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - ==> Parameters: 
+2022-01-09 14:31:39.720 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - <==      Total: 1
+2022-01-09 14:31:39.720 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - ==>  Preparing: select g.* from `goods` g LIMIT ?
+2022-01-09 14:31:39.721 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - ==> Parameters: 7(Long)
+2022-01-09 14:31:39.725 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - <==      Total: 7
+2022-01-09 14:31:40.400 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2022-01-09 14:31:40.401 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2022-01-09 14:31:40.401 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2022-01-09 14:31:40.402 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2022-01-09 14:31:40.402 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2022-01-09 14:31:40.403 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2022-01-09 14:31:40.404 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2022-01-09 14:31:40.404 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2022-01-09 14:31:40.405 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2022-01-09 14:31:40.420 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2022-01-09 14:31:40.421 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 0(Integer)
+2022-01-09 14:31:40.429 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 6
+2022-01-09 14:31:40.431 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2022-01-09 14:31:40.432 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 4(Integer)
+2022-01-09 14:31:40.433 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 14:31:40.434 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2022-01-09 14:31:40.434 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 22(Integer)
+2022-01-09 14:31:40.436 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 14:31:40.437 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2022-01-09 14:31:40.437 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 2(Integer)
+2022-01-09 14:31:40.439 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2022-01-09 14:31:40.440 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2022-01-09 14:31:40.440 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 3(Integer)
+2022-01-09 14:31:40.441 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2022-01-09 14:31:40.442 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2022-01-09 14:31:40.442 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 5(Integer)
+2022-01-09 14:31:40.443 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 14:31:40.444 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2022-01-09 14:31:40.444 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 1(Integer)
+2022-01-09 14:31:40.446 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 14:31:44.402 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2022-01-09 14:31:44.402 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2022-01-09 14:31:44.403 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2022-01-09 14:31:44.404 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2022-01-09 14:31:44.404 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2022-01-09 14:31:44.405 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2022-01-09 14:31:44.406 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2022-01-09 14:31:44.407 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2022-01-09 14:31:44.408 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2022-01-09 14:31:44.412 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2022-01-09 14:31:44.413 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 0(Integer)
+2022-01-09 14:31:44.415 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 6
+2022-01-09 14:31:44.416 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2022-01-09 14:31:44.417 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 4(Integer)
+2022-01-09 14:31:44.418 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 14:31:44.419 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2022-01-09 14:31:44.420 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 22(Integer)
+2022-01-09 14:31:44.421 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 14:31:44.423 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2022-01-09 14:31:44.424 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 2(Integer)
+2022-01-09 14:31:44.425 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2022-01-09 14:31:44.427 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2022-01-09 14:31:44.428 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 3(Integer)
+2022-01-09 14:31:44.429 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2022-01-09 14:31:44.431 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2022-01-09 14:31:44.431 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 5(Integer)
+2022-01-09 14:31:44.432 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 14:31:44.434 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ?) ORDER BY sort ASC
+2022-01-09 14:31:44.434 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 1(Integer)
+2022-01-09 14:31:44.435 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 14:31:45.301 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2022-01-09 14:31:45.302 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2022-01-09 14:31:45.303 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2022-01-09 14:31:45.303 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2022-01-09 14:31:45.304 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2022-01-09 14:31:45.304 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2022-01-09 14:31:45.305 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2022-01-09 14:31:45.305 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2022-01-09 14:31:45.306 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2022-01-09 14:31:45.308 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM `goods` g
+2022-01-09 14:31:45.308 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - ==> Parameters: 
+2022-01-09 14:31:45.309 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - <==      Total: 1
+2022-01-09 14:31:45.310 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - ==>  Preparing: select g.* from `goods` g LIMIT ?
+2022-01-09 14:31:45.311 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - ==> Parameters: 7(Long)
+2022-01-09 14:31:45.312 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - <==      Total: 7
+2022-01-09 14:31:45.696 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2022-01-09 14:31:45.696 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2022-01-09 14:31:45.697 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2022-01-09 14:31:45.698 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2022-01-09 14:31:45.698 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2022-01-09 14:31:45.699 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2022-01-09 14:31:45.700 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2022-01-09 14:31:45.700 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2022-01-09 14:31:45.701 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2022-01-09 14:31:45.703 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM `user` u
+2022-01-09 14:31:45.704 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - ==> Parameters: 
+2022-01-09 14:31:45.705 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage_mpCount - <==      Total: 1
+2022-01-09 14:31:45.705 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - ==>  Preparing: select u.* from `user` u LIMIT ?
+2022-01-09 14:31:45.706 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - ==> Parameters: 7(Long)
+2022-01-09 14:31:45.707 [DEBUG] com.jawe.system.mapper.UserMapper.findUserPage - <==      Total: 7
+2022-01-09 14:49:09.642 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2022-01-09 14:49:09.643 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2022-01-09 14:49:09.644 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2022-01-09 14:49:09.645 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2022-01-09 14:49:09.645 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2022-01-09 14:49:09.647 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2022-01-09 14:49:09.648 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2022-01-09 14:49:09.648 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2022-01-09 14:49:09.649 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2022-01-09 14:49:09.652 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM `goods` g
+2022-01-09 14:49:09.653 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - ==> Parameters: 
+2022-01-09 14:49:09.653 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - <==      Total: 1
+2022-01-09 14:49:09.654 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - ==>  Preparing: select g.* from `goods` g LIMIT ?
+2022-01-09 14:49:09.654 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - ==> Parameters: 7(Long)
+2022-01-09 14:49:09.658 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - <==      Total: 7
+2022-01-09 14:50:37.879 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2022-01-09 14:50:37.880 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2022-01-09 14:50:37.881 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2022-01-09 14:50:37.882 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2022-01-09 14:50:37.882 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2022-01-09 14:50:37.883 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2022-01-09 14:50:37.884 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2022-01-09 14:50:37.884 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2022-01-09 14:50:37.885 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2022-01-09 14:50:37.888 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM `goods` g
+2022-01-09 14:50:37.889 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - ==> Parameters: 
+2022-01-09 14:50:37.890 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - <==      Total: 1
+2022-01-09 14:50:37.892 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - ==>  Preparing: select g.* from `goods` g LIMIT ? OFFSET ?
+2022-01-09 14:50:37.892 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - ==> Parameters: 7(Long), 7(Long)
+2022-01-09 14:50:37.894 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - <==      Total: 7
+2022-01-09 14:50:41.634 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==>  Preparing: SELECT username,password,enable from user u where u.username = ?;
+2022-01-09 14:50:41.634 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - ==> Parameters: admin(String)
+2022-01-09 14:50:41.635 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findByPhoneNumber - <==      Total: 1
+2022-01-09 14:50:41.636 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==>  Preparing: SELECT role_code FROM role r LEFT JOIN user_role ur ON r.id = ur.role_id LEFT JOIN user u ON u.id = ur.user_id WHERE u.username = ?
+2022-01-09 14:50:41.636 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - ==> Parameters: admin(String)
+2022-01-09 14:50:41.637 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findRole - <==      Total: 1
+2022-01-09 14:50:41.638 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==>  Preparing: SELECT DISTINCT url FROM api m LEFT JOIN role_api rm ON m.id = rm.api_id LEFT JOIN role r ON r.id = rm.role_id WHERE r.role_code IN ( ? )
+2022-01-09 14:50:41.638 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - ==> Parameters: admin(String)
+2022-01-09 14:50:41.639 [DEBUG] com.jawe.system.mapper.MyUserDetailsServiceMapper.findAuthorityByRoleCodes - <==      Total: 4
+2022-01-09 14:50:41.642 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM `goods` g
+2022-01-09 14:50:41.642 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - ==> Parameters: 
+2022-01-09 14:50:41.644 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage_mpCount - <==      Total: 1
+2022-01-09 14:50:41.645 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - ==>  Preparing: select g.* from `goods` g LIMIT ? OFFSET ?
+2022-01-09 14:50:41.646 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - ==> Parameters: 7(Long), 14(Long)
+2022-01-09 14:50:41.648 [DEBUG] com.jawe.system.mapper.GoodsMapper.findGoodsPage - <==      Total: 6
+2022-01-09 14:53:33.456 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2022-01-09 14:53:33.456 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2022-01-09 14:53:33.458 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2022-01-09 14:53:33.459 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ?
+2022-01-09 14:53:33.460 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long)
+2022-01-09 14:53:33.462 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2022-01-09 14:53:37.682 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2022-01-09 14:53:37.682 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2022-01-09 14:53:37.683 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2022-01-09 14:53:37.684 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ?
+2022-01-09 14:53:37.684 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long)
+2022-01-09 14:53:37.686 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2022-01-09 14:53:42.458 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2022-01-09 14:53:42.459 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2022-01-09 14:53:42.460 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2022-01-09 14:53:42.462 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ? OFFSET ?
+2022-01-09 14:53:42.462 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long), 8(Long)
+2022-01-09 14:53:42.465 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2022-01-09 14:54:56.203 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 14:54:56.204 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 0(Integer), 1(Integer)
+2022-01-09 14:54:56.206 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 6
+2022-01-09 14:54:56.208 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 14:54:56.211 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 4(Integer), 1(Integer)
+2022-01-09 14:54:56.212 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 14:54:56.214 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 14:54:56.215 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 22(Integer), 1(Integer)
+2022-01-09 14:54:56.216 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 14:54:56.217 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 14:54:56.217 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 2(Integer), 1(Integer)
+2022-01-09 14:54:56.218 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2022-01-09 14:54:56.220 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 14:54:56.220 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 3(Integer), 1(Integer)
+2022-01-09 14:54:56.221 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2022-01-09 14:54:56.222 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 14:54:56.222 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 5(Integer), 1(Integer)
+2022-01-09 14:54:56.224 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 14:54:56.225 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 14:54:56.226 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 1(Integer), 1(Integer)
+2022-01-09 14:54:56.227 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 14:54:56.245 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2022-01-09 14:54:56.246 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2022-01-09 14:54:56.247 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2022-01-09 14:54:56.247 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ?
+2022-01-09 14:54:56.248 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long)
+2022-01-09 14:54:56.249 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2022-01-09 14:54:58.172 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==>  Preparing: select * from user where username = ?
+2022-01-09 14:54:58.173 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==> Parameters: user(String)
+2022-01-09 14:54:58.176 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - <==      Total: 1
+2022-01-09 14:54:58.184 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==>  Preparing: SELECT id,goods_id,num,price,user_id,is_active,category_id,create_time FROM cart WHERE (user_id = ?) ORDER BY category_id ASC
+2022-01-09 14:54:58.185 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==> Parameters: 2(Integer)
+2022-01-09 14:54:58.193 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - <==      Total: 5
+2022-01-09 14:54:58.194 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 14:54:58.194 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 20(Integer)
+2022-01-09 14:54:58.196 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 14:54:58.197 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 14:54:58.197 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2022-01-09 14:54:58.198 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 14:54:58.199 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 14:54:58.199 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 13(Integer)
+2022-01-09 14:54:58.200 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 14:54:58.201 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 14:54:58.201 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2022-01-09 14:54:58.202 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 14:54:58.203 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 14:54:58.203 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 23(Integer)
+2022-01-09 14:54:58.204 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 14:54:58.205 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 14:54:58.205 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2022-01-09 14:54:58.206 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 14:54:58.207 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 14:54:58.207 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 6(Integer)
+2022-01-09 14:54:58.208 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 14:54:58.209 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 14:54:58.209 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 22(Integer)
+2022-01-09 14:54:58.211 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 14:54:58.212 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 14:54:58.212 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2022-01-09 14:54:58.213 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 14:54:58.214 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 14:54:58.214 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 26(Integer)
+2022-01-09 14:54:58.215 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 14:54:58.216 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 14:54:58.216 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 24(Integer)
+2022-01-09 14:54:58.217 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 14:54:58.218 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 14:54:58.218 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 21(Integer)
+2022-01-09 14:54:58.219 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 14:54:58.220 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 14:54:58.220 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 24(Integer)
+2022-01-09 14:54:58.221 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 14:55:01.062 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2022-01-09 14:55:01.063 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 25(Integer)
+2022-01-09 14:55:01.101 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2022-01-09 14:55:01.119 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2022-01-09 14:55:01.120 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 29(Integer)
+2022-01-09 14:55:01.174 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2022-01-09 16:36:09.235 [DEBUG] com.jawe.system.mapper.AddressMapper.selectList - ==>  Preparing: SELECT id,user_id,mobile,address,detail,name,tag,is_default FROM address WHERE (user_id = ?) ORDER BY is_default DESC
+2022-01-09 16:36:09.241 [DEBUG] com.jawe.system.mapper.AddressMapper.selectList - ==> Parameters: 2(Integer)
+2022-01-09 16:36:09.258 [DEBUG] com.jawe.system.mapper.AddressMapper.selectList - <==      Total: 4
+2022-01-09 16:36:16.508 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==>  Preparing: update cart c set is_active=abs(is_active-1) where c.id = ?;
+2022-01-09 16:36:16.509 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - ==> Parameters: 29(Integer)
+2022-01-09 16:36:16.548 [DEBUG] com.jawe.system.mapper.CartMapper.onActive - <==    Updates: 1
+2022-01-09 16:37:07.291 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==>  Preparing: select * from user where username = ?
+2022-01-09 16:37:07.292 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==> Parameters: user(String)
+2022-01-09 16:37:07.296 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - <==      Total: 1
+2022-01-09 16:37:07.300 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==>  Preparing: SELECT id,goods_id,num,price,user_id,is_active,category_id,create_time FROM cart WHERE (user_id = ?) ORDER BY category_id ASC
+2022-01-09 16:37:07.300 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==> Parameters: 2(Integer)
+2022-01-09 16:37:07.303 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - <==      Total: 5
+2022-01-09 16:37:07.304 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:37:07.305 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 20(Integer)
+2022-01-09 16:37:07.310 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:37:07.311 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:37:07.312 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2022-01-09 16:37:07.314 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:37:07.314 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:37:07.315 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 13(Integer)
+2022-01-09 16:37:07.316 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:37:07.317 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:37:07.318 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2022-01-09 16:37:07.319 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:37:07.320 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:37:07.320 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 23(Integer)
+2022-01-09 16:37:07.322 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:37:07.323 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:37:07.323 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2022-01-09 16:37:07.324 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:37:07.325 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 16:37:07.325 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 6(Integer)
+2022-01-09 16:37:07.326 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 16:37:07.327 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:37:07.327 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 22(Integer)
+2022-01-09 16:37:07.328 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:37:07.328 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:37:07.328 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2022-01-09 16:37:07.329 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:37:07.330 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:37:07.330 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 26(Integer)
+2022-01-09 16:37:07.332 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:37:07.332 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:37:07.333 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 24(Integer)
+2022-01-09 16:37:07.334 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:37:07.334 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 16:37:07.334 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 21(Integer)
+2022-01-09 16:37:07.335 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 16:37:07.336 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 16:37:07.336 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 24(Integer)
+2022-01-09 16:37:07.337 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 16:37:26.474 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==>  Preparing: select * from user where username = ?
+2022-01-09 16:37:26.475 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==> Parameters: user(String)
+2022-01-09 16:37:26.477 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - <==      Total: 1
+2022-01-09 16:37:26.479 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==>  Preparing: SELECT id,goods_id,num,price,user_id,is_active,category_id,create_time FROM cart WHERE (user_id = ?) ORDER BY category_id ASC
+2022-01-09 16:37:26.480 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==> Parameters: 2(Integer)
+2022-01-09 16:37:26.481 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - <==      Total: 5
+2022-01-09 16:37:26.482 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:37:26.482 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 20(Integer)
+2022-01-09 16:37:26.483 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:37:26.484 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:37:26.485 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2022-01-09 16:37:26.486 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:37:26.486 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:37:26.487 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 13(Integer)
+2022-01-09 16:37:26.488 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:37:26.489 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:37:26.489 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2022-01-09 16:37:26.490 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:37:26.491 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:37:26.491 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 23(Integer)
+2022-01-09 16:37:26.493 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:37:26.494 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:37:26.494 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2022-01-09 16:37:26.495 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:37:26.496 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 16:37:26.496 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 6(Integer)
+2022-01-09 16:37:26.497 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 16:37:26.498 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:37:26.498 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 22(Integer)
+2022-01-09 16:37:26.499 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:37:26.499 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:37:26.500 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2022-01-09 16:37:26.500 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:37:26.501 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:37:26.501 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 26(Integer)
+2022-01-09 16:37:26.502 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:37:26.503 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:37:26.503 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 24(Integer)
+2022-01-09 16:37:26.504 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:37:26.504 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 16:37:26.505 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 21(Integer)
+2022-01-09 16:37:26.506 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 16:37:26.507 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 16:37:26.507 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 24(Integer)
+2022-01-09 16:37:26.508 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 16:37:39.011 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 16:37:39.012 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 0(Integer), 1(Integer)
+2022-01-09 16:37:39.014 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 6
+2022-01-09 16:37:39.017 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 16:37:39.018 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 4(Integer), 1(Integer)
+2022-01-09 16:37:39.020 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 16:37:39.022 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 16:37:39.024 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 22(Integer), 1(Integer)
+2022-01-09 16:37:39.025 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 16:37:39.027 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 16:37:39.027 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 2(Integer), 1(Integer)
+2022-01-09 16:37:39.028 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2022-01-09 16:37:39.030 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 16:37:39.031 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 3(Integer), 1(Integer)
+2022-01-09 16:37:39.032 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2022-01-09 16:37:39.034 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 16:37:39.034 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 5(Integer), 1(Integer)
+2022-01-09 16:37:39.036 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 16:37:39.037 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 16:37:39.038 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 1(Integer), 1(Integer)
+2022-01-09 16:37:39.039 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 16:37:39.066 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2022-01-09 16:37:39.066 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2022-01-09 16:37:39.068 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2022-01-09 16:37:39.069 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ?
+2022-01-09 16:37:39.069 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long)
+2022-01-09 16:37:39.071 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2022-01-09 16:39:04.900 [DEBUG] com.jawe.system.mapper.AddressMapper.selectList - ==>  Preparing: SELECT id,user_id,mobile,address,detail,name,tag,is_default FROM address WHERE (user_id = ?) ORDER BY is_default DESC
+2022-01-09 16:39:04.900 [DEBUG] com.jawe.system.mapper.AddressMapper.selectList - ==> Parameters: 2(Integer)
+2022-01-09 16:39:04.901 [DEBUG] com.jawe.system.mapper.AddressMapper.selectList - <==      Total: 4
+2022-01-09 16:40:00.836 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==>  Preparing: select * from user where username = ?
+2022-01-09 16:40:00.836 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==> Parameters: user(String)
+2022-01-09 16:40:00.838 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - <==      Total: 1
+2022-01-09 16:40:00.841 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==>  Preparing: SELECT id,goods_id,num,price,user_id,is_active,category_id,create_time FROM cart WHERE (user_id = ?) ORDER BY category_id ASC
+2022-01-09 16:40:00.841 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==> Parameters: 2(Integer)
+2022-01-09 16:40:00.846 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - <==      Total: 5
+2022-01-09 16:40:00.847 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:40:00.848 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 20(Integer)
+2022-01-09 16:40:00.850 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:40:00.851 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:40:00.851 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2022-01-09 16:40:00.852 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:40:00.853 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:40:00.854 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 13(Integer)
+2022-01-09 16:40:00.855 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:40:00.856 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:40:00.856 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2022-01-09 16:40:00.857 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:40:00.858 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:40:00.858 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 23(Integer)
+2022-01-09 16:40:00.860 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:40:00.860 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:40:00.861 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2022-01-09 16:40:00.862 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:40:00.862 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 16:40:00.863 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 6(Integer)
+2022-01-09 16:40:00.863 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 16:40:00.864 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:40:00.865 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 22(Integer)
+2022-01-09 16:40:00.866 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:40:00.867 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:40:00.867 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2022-01-09 16:40:00.868 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:40:00.868 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:40:00.869 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 26(Integer)
+2022-01-09 16:40:00.870 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:40:00.871 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:40:00.871 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 24(Integer)
+2022-01-09 16:40:00.872 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:40:00.872 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 16:40:00.873 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 21(Integer)
+2022-01-09 16:40:00.874 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 16:40:00.874 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 16:40:00.875 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 24(Integer)
+2022-01-09 16:40:00.876 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 16:43:12.827 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==>  Preparing: select * from user where username = ?
+2022-01-09 16:43:12.828 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==> Parameters: user(String)
+2022-01-09 16:43:12.830 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - <==      Total: 1
+2022-01-09 16:43:12.832 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==>  Preparing: SELECT id,goods_id,num,price,user_id,is_active,category_id,create_time FROM cart WHERE (user_id = ?) ORDER BY category_id ASC
+2022-01-09 16:43:12.833 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==> Parameters: 2(Integer)
+2022-01-09 16:43:12.834 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - <==      Total: 5
+2022-01-09 16:43:12.835 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:43:12.836 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 20(Integer)
+2022-01-09 16:43:12.837 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:43:12.838 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:43:12.838 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2022-01-09 16:43:12.839 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:43:12.839 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:43:12.840 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 13(Integer)
+2022-01-09 16:43:12.840 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:43:12.841 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:43:12.841 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2022-01-09 16:43:12.842 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:43:12.842 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:43:12.843 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 23(Integer)
+2022-01-09 16:43:12.843 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:43:12.844 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:43:12.844 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2022-01-09 16:43:12.845 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:43:12.846 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 16:43:12.846 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 6(Integer)
+2022-01-09 16:43:12.847 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 16:43:12.847 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:43:12.848 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 22(Integer)
+2022-01-09 16:43:12.849 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:43:12.850 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:43:12.850 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2022-01-09 16:43:12.851 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:43:12.851 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 16:43:12.851 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 26(Integer)
+2022-01-09 16:43:12.853 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 16:43:12.853 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 16:43:12.853 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 24(Integer)
+2022-01-09 16:43:12.854 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 16:43:12.854 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 16:43:12.855 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 21(Integer)
+2022-01-09 16:43:12.855 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 16:43:12.856 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 16:43:12.856 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 24(Integer)
+2022-01-09 16:43:12.857 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 16:43:13.460 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 16:43:13.461 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 0(Integer), 1(Integer)
+2022-01-09 16:43:13.462 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 6
+2022-01-09 16:43:13.465 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 16:43:13.465 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 4(Integer), 1(Integer)
+2022-01-09 16:43:13.467 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 16:43:13.469 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 16:43:13.470 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 22(Integer), 1(Integer)
+2022-01-09 16:43:13.471 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 16:43:13.473 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 16:43:13.474 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 2(Integer), 1(Integer)
+2022-01-09 16:43:13.475 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2022-01-09 16:43:13.477 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 16:43:13.477 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 3(Integer), 1(Integer)
+2022-01-09 16:43:13.478 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 1
+2022-01-09 16:43:13.480 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 16:43:13.481 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 5(Integer), 1(Integer)
+2022-01-09 16:43:13.482 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 16:43:13.484 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE (pid = ? AND enable = ?) ORDER BY sort ASC
+2022-01-09 16:43:13.484 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - ==> Parameters: 1(Integer), 1(Integer)
+2022-01-09 16:43:13.485 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectList - <==      Total: 2
+2022-01-09 16:43:13.505 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2022-01-09 16:43:13.505 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2022-01-09 16:43:13.506 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2022-01-09 16:43:13.507 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ?
+2022-01-09 16:43:13.508 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long)
+2022-01-09 16:43:13.509 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2022-01-09 16:43:14.088 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM goods WHERE (goods_name LIKE ?)
+2022-01-09 16:43:14.088 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - ==> Parameters: %%(String)
+2022-01-09 16:43:14.089 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage_mpCount - <==      Total: 1
+2022-01-09 16:43:14.090 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE (goods_name LIKE ?) LIMIT ?
+2022-01-09 16:43:14.090 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - ==> Parameters: %%(String), 8(Long)
+2022-01-09 16:43:14.091 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectPage - <==      Total: 8
+2022-01-09 18:25:13.111 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==>  Preparing: select * from user where username = ?
+2022-01-09 18:25:13.117 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==> Parameters: user(String)
+2022-01-09 18:25:13.122 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - <==      Total: 1
+2022-01-09 18:25:13.127 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==>  Preparing: SELECT id,goods_id,num,price,user_id,is_active,category_id,create_time FROM cart WHERE (user_id = ?) ORDER BY category_id ASC
+2022-01-09 18:25:13.128 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - ==> Parameters: 2(Integer)
+2022-01-09 18:25:13.131 [DEBUG] com.jawe.system.mapper.CartMapper.selectList - <==      Total: 5
+2022-01-09 18:25:13.132 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 18:25:13.133 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 20(Integer)
+2022-01-09 18:25:13.136 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 18:25:13.137 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 18:25:13.137 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2022-01-09 18:25:13.139 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 18:25:13.139 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 18:25:13.140 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 13(Integer)
+2022-01-09 18:25:13.141 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 18:25:13.141 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 18:25:13.141 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 6(Integer)
+2022-01-09 18:25:13.142 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 18:25:13.142 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 18:25:13.143 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 23(Integer)
+2022-01-09 18:25:13.144 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 18:25:13.144 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 18:25:13.145 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2022-01-09 18:25:13.145 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 18:25:13.146 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 18:25:13.146 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 6(Integer)
+2022-01-09 18:25:13.159 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 18:25:13.160 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 18:25:13.160 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 22(Integer)
+2022-01-09 18:25:13.161 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 18:25:13.162 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 18:25:13.162 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 21(Integer)
+2022-01-09 18:25:13.162 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 18:25:13.163 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==>  Preparing: SELECT id,goods_name,category_id,description,price,stock,sales,cover_url,is_on,is_recommend,create_time,update_time FROM goods WHERE id=?
+2022-01-09 18:25:13.166 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - ==> Parameters: 26(Integer)
+2022-01-09 18:25:13.167 [DEBUG] com.jawe.system.mapper.GoodsMapper.selectById - <==      Total: 1
+2022-01-09 18:25:13.168 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==>  Preparing: select name from goods_category where id=?
+2022-01-09 18:25:13.168 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - ==> Parameters: 24(Integer)
+2022-01-09 18:25:13.169 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.getName - <==      Total: 1
+2022-01-09 18:25:13.169 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 18:25:13.169 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 21(Integer)
+2022-01-09 18:25:13.170 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 18:25:13.171 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==>  Preparing: SELECT id,pid,name,sort,enable,create_time,update_time FROM goods_category WHERE id=?
+2022-01-09 18:25:13.171 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - ==> Parameters: 24(Integer)
+2022-01-09 18:25:13.172 [DEBUG] com.jawe.system.mapper.GoodsCategoryMapper.selectById - <==      Total: 1
+2022-01-09 23:01:34.074 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==>  Preparing: select * from user where username = ?
+2022-01-09 23:01:34.083 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==> Parameters: (String)
+2022-01-09 23:01:34.090 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - <==      Total: 0
+2022-01-09 23:02:43.072 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==>  Preparing: select * from user where username = ?
+2022-01-09 23:02:43.075 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - ==> Parameters: null
+2022-01-09 23:02:43.076 [DEBUG] com.jawe.system.mapper.UserMapper.currentUser - <==      Total: 0

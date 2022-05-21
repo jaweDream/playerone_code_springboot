@@ -1,0 +1,57 @@
+spring:
+  application:
+    name: demo-base-web
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/player_one?useAffectedRows=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username: root
+    password: root
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  security:
+    logintype: JSON
+    user:
+      name: admin
+      password: admin
+
+  #redis配置
+  redis:
+    database: 0
+    host: 192.168.10.131
+    port: 6379
+    password: # 如果未单独配置默认为空即可
+    timeout: 3000
+
+
+
+jwt:
+  secret: ffjaksdfjaklf
+  expiration: 3600000
+  header: JWTHeaderName
+
+
+#基础配置
+server:
+  port: 80
+
+#mybatis-plus配置
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+  global-config:
+    db-config:
+      logic-delete-field: deleted  # 全局逻辑删除的实体字段名(since 3.3.0,配置后可以忽略不配置步骤2)
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+  mapper-locations: classpath*:/mapper/*.xml
+  type-aliases-package: com.jawe.system.entity
+  type-enums-package: com.jawe.state.enums
+
+alioss:
+  endpoint: oss-cn-beijing.aliyuncs.com
+  accessKeyId: LTAI5tBhC6E5xgPVvhq9bLnf
+  accessKeySecret: 7akc2JDyZmiP6JXnzflIutZVvbMJNC
+  bucketName: player-one
+  src: https://player-one.oss-cn-beijing.aliyuncs.com
+

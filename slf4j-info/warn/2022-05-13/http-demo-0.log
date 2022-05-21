@@ -1,0 +1,1 @@
+2022-05-13 01:05:20.381 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".

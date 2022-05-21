@@ -1,0 +1,295 @@
+2022-05-21 02:57:53.314 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 03:27:14.163 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 05:13:20.625 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 05:19:20.665 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 05:20:07.817 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 05:21:08.118 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 05:28:55.902 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 05:31:16.963 [container-2] WARN  o.s.d.redis.listener.RedisMessageListenerContainer - Execution of message listener failed, and no ErrorHandler has been set.
+java.lang.NullPointerException: null
+	at com.jawe.system.service.impl.OrderServiceImpl.cancel(OrderServiceImpl.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy97.cancel(Unknown Source)
+	at com.jawe.conf.redis.RedisKeyExpirationListener.onMessage(RedisKeyExpirationListener.java:38)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.executeListener(RedisMessageListenerContainer.java:250)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:240)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$0(RedisMessageListenerContainer.java:987)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-21 05:52:20.508 [container-4] WARN  o.s.d.redis.listener.RedisMessageListenerContainer - Execution of message listener failed, and no ErrorHandler has been set.
+java.lang.NullPointerException: null
+	at com.jawe.system.service.impl.OrderServiceImpl.cancel(OrderServiceImpl.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy97.cancel(Unknown Source)
+	at com.jawe.conf.redis.RedisKeyExpirationListener.onMessage(RedisKeyExpirationListener.java:38)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.executeListener(RedisMessageListenerContainer.java:250)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:240)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$0(RedisMessageListenerContainer.java:987)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-21 05:53:05.190 [container-5] WARN  o.s.d.redis.listener.RedisMessageListenerContainer - Execution of message listener failed, and no ErrorHandler has been set.
+java.lang.NullPointerException: null
+	at com.jawe.system.service.impl.OrderServiceImpl.cancel(OrderServiceImpl.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy97.cancel(Unknown Source)
+	at com.jawe.conf.redis.RedisKeyExpirationListener.onMessage(RedisKeyExpirationListener.java:38)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.executeListener(RedisMessageListenerContainer.java:250)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:240)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$0(RedisMessageListenerContainer.java:987)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-21 06:16:25.541 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 06:18:24.184 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 06:42:57.036 [container-3] WARN  o.s.d.redis.listener.RedisMessageListenerContainer - Execution of message listener failed, and no ErrorHandler has been set.
+java.lang.NullPointerException: null
+	at com.jawe.system.service.impl.OrderServiceImpl.cancel(OrderServiceImpl.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy101.cancel(Unknown Source)
+	at com.jawe.conf.redis.RedisKeyExpirationListener.onMessage(RedisKeyExpirationListener.java:38)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.executeListener(RedisMessageListenerContainer.java:250)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:240)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$0(RedisMessageListenerContainer.java:987)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-21 07:02:29.617 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 07:23:59.965 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 07:25:47.937 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 07:49:54.300 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 08:03:08.324 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 08:57:53.164 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 09:09:29.854 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 09:35:47.962 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 10:08:02.493 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 10:19:29.193 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 10:23:55.010 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 10:27:07.901 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 11:53:16.872 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 11:59:06.867 [container-2] WARN  o.s.d.redis.listener.RedisMessageListenerContainer - Execution of message listener failed, and no ErrorHandler has been set.
+java.lang.NullPointerException: null
+	at com.jawe.system.service.impl.OrderServiceImpl.cancel(OrderServiceImpl.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy101.cancel(Unknown Source)
+	at com.jawe.conf.redis.RedisKeyExpirationListener.onMessage(RedisKeyExpirationListener.java:39)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.executeListener(RedisMessageListenerContainer.java:250)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:240)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$0(RedisMessageListenerContainer.java:987)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-21 11:59:27.299 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 12:00:14.747 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 12:09:31.270 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 12:09:40.323 [container-2] WARN  o.s.d.redis.listener.RedisMessageListenerContainer - Execution of message listener failed, and no ErrorHandler has been set.
+java.lang.NullPointerException: null
+	at com.jawe.system.service.impl.OrderServiceImpl.cancel(OrderServiceImpl.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy101.cancel(Unknown Source)
+	at com.jawe.conf.redis.RedisKeyExpirationListener.onMessage(RedisKeyExpirationListener.java:38)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.executeListener(RedisMessageListenerContainer.java:250)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:240)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$0(RedisMessageListenerContainer.java:987)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-21 12:12:50.943 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 12:13:28.515 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 12:16:17.101 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 12:20:25.713 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 12:23:37.633 [container-2] WARN  o.s.d.redis.listener.RedisMessageListenerContainer - Execution of message listener failed, and no ErrorHandler has been set.
+java.lang.NullPointerException: null
+	at com.jawe.system.service.impl.OrderServiceImpl.cancel(OrderServiceImpl.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy101.cancel(Unknown Source)
+	at com.jawe.conf.redis.RedisKeyExpirationListener.onMessage(RedisKeyExpirationListener.java:38)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.executeListener(RedisMessageListenerContainer.java:250)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:240)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$0(RedisMessageListenerContainer.java:987)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-21 12:23:47.025 [container-3] WARN  o.s.d.redis.listener.RedisMessageListenerContainer - Execution of message listener failed, and no ErrorHandler has been set.
+java.lang.NullPointerException: null
+	at com.jawe.system.service.impl.OrderServiceImpl.cancel(OrderServiceImpl.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy101.cancel(Unknown Source)
+	at com.jawe.conf.redis.RedisKeyExpirationListener.onMessage(RedisKeyExpirationListener.java:38)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.executeListener(RedisMessageListenerContainer.java:250)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:240)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$0(RedisMessageListenerContainer.java:987)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-21 12:26:32.418 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 12:28:23.785 [container-2] WARN  o.s.d.redis.listener.RedisMessageListenerContainer - Execution of message listener failed, and no ErrorHandler has been set.
+java.lang.NullPointerException: null
+	at com.jawe.system.service.impl.OrderServiceImpl.cancel(OrderServiceImpl.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy101.cancel(Unknown Source)
+	at com.jawe.conf.redis.RedisKeyExpirationListener.onMessage(RedisKeyExpirationListener.java:38)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.executeListener(RedisMessageListenerContainer.java:250)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:240)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$0(RedisMessageListenerContainer.java:987)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-21 12:29:23.739 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 12:29:44.626 [container-2] WARN  o.s.d.redis.listener.RedisMessageListenerContainer - Execution of message listener failed, and no ErrorHandler has been set.
+java.lang.NullPointerException: null
+	at com.jawe.system.service.impl.OrderServiceImpl.cancel(OrderServiceImpl.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy101.cancel(Unknown Source)
+	at com.jawe.conf.redis.RedisKeyExpirationListener.onMessage(RedisKeyExpirationListener.java:38)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.executeListener(RedisMessageListenerContainer.java:250)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:240)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$0(RedisMessageListenerContainer.java:987)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-21 12:32:55.879 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 13:03:09.991 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 13:06:08.651 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 13:12:30.570 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 13:12:36.832 [container-2] WARN  o.s.d.redis.listener.RedisMessageListenerContainer - Execution of message listener failed, and no ErrorHandler has been set.
+java.lang.RuntimeException:  CANCEL_FINISH -> 取消订单 失败，状态异常 order=订单号：78497002618490880, 订单状态：CANCEL_FINISH
+	at com.jawe.system.service.impl.OrderServiceImpl.cancel(OrderServiceImpl.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy101.cancel(Unknown Source)
+	at com.jawe.conf.redis.RedisKeyExpirationListener.onMessage(RedisKeyExpirationListener.java:38)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.executeListener(RedisMessageListenerContainer.java:250)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:240)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$0(RedisMessageListenerContainer.java:987)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-21 13:15:44.507 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 13:30:38.319 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 13:40:07.687 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 13:41:54.902 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 13:43:10.083 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 13:46:28.589 [container-2] WARN  o.s.d.redis.listener.RedisMessageListenerContainer - Execution of message listener failed, and no ErrorHandler has been set.
+java.lang.RuntimeException:  RETURN_FINISH -> 取消订单 失败，状态异常 order=订单号：78505527952412672, 订单状态：RETURN_FINISH
+	at com.jawe.system.service.impl.OrderServiceImpl.cancel(OrderServiceImpl.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy101.cancel(Unknown Source)
+	at com.jawe.conf.redis.RedisKeyExpirationListener.onMessage(RedisKeyExpirationListener.java:38)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.executeListener(RedisMessageListenerContainer.java:250)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:240)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$0(RedisMessageListenerContainer.java:987)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-21 13:50:29.067 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 13:51:32.609 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 13:54:13.844 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 13:57:51.439 [container-2] WARN  o.s.d.redis.listener.RedisMessageListenerContainer - Execution of message listener failed, and no ErrorHandler has been set.
+java.lang.RuntimeException:  CANCEL_FINISH -> 取消订单 失败，状态异常 order=订单号：78508392251002880, 订单状态：CANCEL_FINISH
+	at com.jawe.system.service.impl.OrderServiceImpl.cancel(OrderServiceImpl.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy101.cancel(Unknown Source)
+	at com.jawe.conf.redis.RedisKeyExpirationListener.onMessage(RedisKeyExpirationListener.java:38)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.executeListener(RedisMessageListenerContainer.java:250)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:240)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$0(RedisMessageListenerContainer.java:987)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-21 13:58:31.577 [container-3] WARN  o.s.d.redis.listener.RedisMessageListenerContainer - Execution of message listener failed, and no ErrorHandler has been set.
+java.lang.RuntimeException:  CANCEL_FINISH -> 取消订单 失败，状态异常 order=订单号：78508560937521152, 订单状态：CANCEL_FINISH
+	at com.jawe.system.service.impl.OrderServiceImpl.cancel(OrderServiceImpl.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy101.cancel(Unknown Source)
+	at com.jawe.conf.redis.RedisKeyExpirationListener.onMessage(RedisKeyExpirationListener.java:38)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.executeListener(RedisMessageListenerContainer.java:250)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:240)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$0(RedisMessageListenerContainer.java:987)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-21 14:01:11.278 [container-5] WARN  o.s.d.redis.listener.RedisMessageListenerContainer - Execution of message listener failed, and no ErrorHandler has been set.
+java.lang.RuntimeException:  CANCEL_FINISH -> 取消订单 失败，状态异常 order=订单号：78509230381993984, 订单状态：CANCEL_FINISH
+	at com.jawe.system.service.impl.OrderServiceImpl.cancel(OrderServiceImpl.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy101.cancel(Unknown Source)
+	at com.jawe.conf.redis.RedisKeyExpirationListener.onMessage(RedisKeyExpirationListener.java:38)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.executeListener(RedisMessageListenerContainer.java:250)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:240)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$0(RedisMessageListenerContainer.java:987)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-21 14:01:31.265 [container-6] WARN  o.s.d.redis.listener.RedisMessageListenerContainer - Execution of message listener failed, and no ErrorHandler has been set.
+java.lang.RuntimeException:  CANCEL_FINISH -> 取消订单 失败，状态异常 order=订单号：78509314326794240, 订单状态：CANCEL_FINISH
+	at com.jawe.system.service.impl.OrderServiceImpl.cancel(OrderServiceImpl.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy101.cancel(Unknown Source)
+	at com.jawe.conf.redis.RedisKeyExpirationListener.onMessage(RedisKeyExpirationListener.java:38)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.executeListener(RedisMessageListenerContainer.java:250)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.processMessage(RedisMessageListenerContainer.java:240)
+	at org.springframework.data.redis.listener.RedisMessageListenerContainer.lambda$dispatchMessage$0(RedisMessageListenerContainer.java:987)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-21 14:03:35.675 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 16:10:31.603 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 16:10:36.654 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisKeyExpirationListener' defined in file [C:\Users\14618\Desktop\Sync\MyDemo\demo-parent\demo-base-web\target\classes\com\jawe\conf\redis\RedisKeyExpirationListener.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 192.168.10.131:6379
+2022-05-21 16:38:14.101 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 16:38:21.303 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisKeyExpirationListener' defined in file [C:\Users\14618\Desktop\Sync\MyDemo\demo-parent\demo-base-web\target\classes\com\jawe\conf\redis\RedisKeyExpirationListener.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 192.168.10.131:6379
+2022-05-21 16:46:22.749 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 19:19:35.107 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 19:19:35.177 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 19:19:40.253 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisKeyExpirationListener' defined in file [C:\Users\14618\Desktop\Sync\MyDemo\demo-parent\demo-base-web\target\classes\com\jawe\conf\redis\RedisKeyExpirationListener.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 192.168.10.131:6379
+2022-05-21 19:19:40.337 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisKeyExpirationListener' defined in file [C:\Users\14618\Desktop\Sync\MyDemo\demo-parent\demo-base-web\target\classes\com\jawe\conf\redis\RedisKeyExpirationListener.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 192.168.10.131:6379
+2022-05-21 19:20:11.365 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.jawe.system.entity.Department".
+2022-05-21 19:20:16.146 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisKeyExpirationListener' defined in file [C:\Users\14618\Desktop\Sync\MyDemo\demo-parent\demo-base-web\target\classes\com\jawe\conf\redis\RedisKeyExpirationListener.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 192.168.10.131:6379

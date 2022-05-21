@@ -1,0 +1,11 @@
+2021-10-28 08:34:42.679 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-28 15:33:48.749 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-28 17:01:51.173 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - Required request parameter 'isEnable' for method parameter type boolean is not present
+2021-10-28 17:03:17.774 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - Failed to convert value of type 'java.lang.String' to required type 'boolean'; nested exception is java.lang.IllegalArgumentException: Invalid boolean value []
+2021-10-28 17:17:21.247 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - Failed to convert value of type 'java.lang.String' to required type 'boolean'; nested exception is java.lang.IllegalArgumentException: Invalid boolean value []
+2021-10-28 17:20:45.039 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-28 19:00:12.608 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-28 21:19:22.848 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-28 21:59:26.435 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-28 22:26:56.727 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-10-28 23:29:59.916 [http-nio-8881-exec-7] ERROR com.jawe.handler.GlobalExceptionHandler - null

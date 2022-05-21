@@ -1,0 +1,36 @@
+2022-05-15 10:52:34.854 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM `goods_order` g WHERE (state = ?)
+2022-05-15 10:52:34.880 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage_mpCount - ==> Parameters: 5(Integer)
+2022-05-15 10:52:34.892 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage_mpCount - <==      Total: 1
+2022-05-15 10:52:37.602 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM `goods_order` g WHERE (state = ?)
+2022-05-15 10:52:37.603 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage_mpCount - ==> Parameters: 4(Integer)
+2022-05-15 10:52:37.606 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage_mpCount - <==      Total: 1
+2022-05-15 10:52:37.606 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage - ==>  Preparing: select g.* from `goods_order` g WHERE (state = ?) LIMIT ?
+2022-05-15 10:52:37.607 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage - ==> Parameters: 4(Integer), 7(Long)
+2022-05-15 10:52:37.621 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage - <==      Total: 2
+2022-05-15 10:52:37.623 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - ==>  Preparing: SELECT id,avatar_url,phone_number,username,password,email,enable,gender,create_time,update_time FROM user WHERE id=?
+2022-05-15 10:52:37.623 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - ==> Parameters: 15(Integer)
+2022-05-15 10:52:37.627 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - <==      Total: 1
+2022-05-15 10:52:37.627 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - ==>  Preparing: SELECT id,avatar_url,phone_number,username,password,email,enable,gender,create_time,update_time FROM user WHERE id=?
+2022-05-15 10:52:37.628 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - ==> Parameters: 15(Integer)
+2022-05-15 10:52:37.629 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - <==      Total: 1
+2022-05-15 10:52:40.831 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM `goods_order` g WHERE (state = ?)
+2022-05-15 10:52:40.831 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage_mpCount - ==> Parameters: 5(Integer)
+2022-05-15 10:52:40.833 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage_mpCount - <==      Total: 1
+2022-05-15 10:52:43.099 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage_mpCount - ==>  Preparing: SELECT COUNT(1) FROM `goods_order` g WHERE (state = ?)
+2022-05-15 10:52:43.100 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage_mpCount - ==> Parameters: 6(Integer)
+2022-05-15 10:52:43.101 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage_mpCount - <==      Total: 1
+2022-05-15 10:52:43.102 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage - ==>  Preparing: select g.* from `goods_order` g WHERE (state = ?) LIMIT ?
+2022-05-15 10:52:43.102 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage - ==> Parameters: 6(Integer), 7(Long)
+2022-05-15 10:52:43.104 [DEBUG] com.jawe.system.mapper.OrderMapper.findOrderPage - <==      Total: 4
+2022-05-15 10:52:43.104 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - ==>  Preparing: SELECT id,avatar_url,phone_number,username,password,email,enable,gender,create_time,update_time FROM user WHERE id=?
+2022-05-15 10:52:43.104 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - ==> Parameters: 11(Integer)
+2022-05-15 10:52:43.108 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - <==      Total: 1
+2022-05-15 10:52:43.108 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - ==>  Preparing: SELECT id,avatar_url,phone_number,username,password,email,enable,gender,create_time,update_time FROM user WHERE id=?
+2022-05-15 10:52:43.108 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - ==> Parameters: 2(Integer)
+2022-05-15 10:52:43.109 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - <==      Total: 1
+2022-05-15 10:52:43.110 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - ==>  Preparing: SELECT id,avatar_url,phone_number,username,password,email,enable,gender,create_time,update_time FROM user WHERE id=?
+2022-05-15 10:52:43.110 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - ==> Parameters: 3(Integer)
+2022-05-15 10:52:43.111 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - <==      Total: 1
+2022-05-15 10:52:43.112 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - ==>  Preparing: SELECT id,avatar_url,phone_number,username,password,email,enable,gender,create_time,update_time FROM user WHERE id=?
+2022-05-15 10:52:43.112 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - ==> Parameters: 2(Integer)
+2022-05-15 10:52:43.113 [DEBUG] com.jawe.system.mapper.UserMapper.selectById - <==      Total: 1

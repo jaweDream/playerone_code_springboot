@@ -1,0 +1,17 @@
+2021-11-14 13:14:19.132 [http-nio-8881-exec-8] ERROR com.jawe.handler.GlobalExceptionHandler - null
+2021-11-14 13:53:15.054 [http-nio-8881-exec-1] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'PATCH' not supported
+2021-11-14 15:02:23.331 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - Required request parameter 'path' for method parameter type String is not present
+2021-11-14 15:02:46.428 [http-nio-8881-exec-4] ERROR com.jawe.handler.GlobalExceptionHandler - Required request parameter 'path' for method parameter type String is not present
+2021-11-14 15:02:53.669 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - Required request parameter 'path' for method parameter type String is not present
+2021-11-14 15:03:00.700 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - Required request parameter 'path' for method parameter type String is not present
+2021-11-14 15:03:30.389 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - Required request parameter 'path' for method parameter type String is not present
+2021-11-14 15:04:47.309 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - Required request parameter 'path' for method parameter type String is not present
+2021-11-14 15:05:13.407 [http-nio-8881-exec-5] ERROR com.jawe.handler.GlobalExceptionHandler - Required request parameter 'path' for method parameter type String is not present
+2021-11-14 15:06:48.880 [http-nio-8881-exec-9] ERROR com.jawe.handler.GlobalExceptionHandler - Required request parameter 'path' for method parameter type String is not present
+2021-11-14 15:06:56.834 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - Required request parameter 'path' for method parameter type String is not present
+2021-11-14 15:07:32.983 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - Required request parameter 'path' for method parameter type String is not present
+2021-11-14 18:36:41.460 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - Required request parameter 'path' for method parameter type String is not present
+2021-11-14 18:45:56.185 [http-nio-8881-exec-10] ERROR com.jawe.handler.GlobalExceptionHandler - 账号已存在
+2021-11-14 18:46:25.859 [http-nio-8881-exec-2] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2021-11-14 18:48:03.262 [http-nio-8881-exec-3] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
+2021-11-14 19:03:07.354 [http-nio-8881-exec-6] ERROR com.jawe.handler.GlobalExceptionHandler - Request method 'POST' not supported
